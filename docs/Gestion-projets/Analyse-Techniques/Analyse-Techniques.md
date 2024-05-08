@@ -1,7 +1,7 @@
 ---
 layout: default
-chapitre: Analyse-Techniques
-presentation: Analyse-Techniques
+package: GestionProjects
+presentationPackage: GestionProjects
 order: 2
 ---
 

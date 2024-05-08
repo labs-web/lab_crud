@@ -1,7 +1,7 @@
 ---
 layout: default
-package: Pôle-sociale
-presentation: Pôle-sociale
+package: GestionProjects
+presentationPackage: GestionProjects
 order: 6
 ---
 
