@@ -4,7 +4,6 @@ namespace App\Models\GestionProjets;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\GestionProjets\Task;
 
 class Projet extends Model
 {
@@ -12,10 +11,7 @@ class Projet extends Model
     
     protected $fillable = [
         'nom' ,
-        'description',
-        'date_debut',
-        'date_de_fin',
-        
+        'description',    
     ];
    
 }

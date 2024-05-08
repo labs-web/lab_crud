@@ -9,6 +9,9 @@ use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Illuminate\Support\Facades\Schema;
+use Psy\Readline\Hoa\Console;
+
 
 
 class ProjetsSeeder extends Seeder
@@ -16,7 +19,29 @@ class ProjetsSeeder extends Seeder
     public function run(): void
     {
 
-       
+        Schema::disableForeignKeyConstraints();
+        Projet::truncate();
+        Schema::enableForeignKeyConstraints();
+   
+        // get data from csv file
+        $csvFile = fopen(base_path("database/data/projets.csv"), "r");
+        $firstline = true;
+        $i = 0;
+        while (($data = fgetcsv($csvFile)) !== FALSE) {
+
+          
+
+            if (!$firstline) {
+
+                Projet::create([
+                    "nom"=>$data['0'],
+                    "description" =>$data['1']
+                ]);    
+            }
+            $firstline = false;
+        }
+   
+        fclose($csvFile);
 
         $actions = ['index', 'show', 'create', 'store', 'edit', 'update', 'destroy', 'export', 'import'];
 

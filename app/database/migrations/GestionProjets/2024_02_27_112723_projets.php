@@ -17,8 +17,6 @@ return new class extends Migration {
             $table->id();
             $table->string('nom');
             $table->string('description')->nullable();
-            $table->date('date_debut');
-            $table->date('date_de_fin');
             $table->timestamps();
         });
     }
