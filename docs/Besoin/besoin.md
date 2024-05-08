@@ -6,7 +6,7 @@ order: 3
 ---
 
 
-# Besion 
+# Besoin 
 {:class="sectionHeader"}
 
 <!-- new slide -->
@@ -46,6 +46,6 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 
 <!-- note -->
 
-Perdre énormément de temps à consulter les tâches et à naviguer entre celles-ci dans différents projets en raison de la lenteur du téléchargement des données, en raison d'un volume important de données.
+Passer un temps considérable à consulter et naviguer entre les différents projets en raison de la lenteur du téléchargement des données, causée par un volume important de données.
 
 <!-- new slide -->
