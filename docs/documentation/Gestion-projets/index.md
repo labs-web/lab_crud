@@ -4,7 +4,7 @@ order: 1
 ---
 {% assign pages = site.pages | sort: "order" %}
 {% for page in pages %}
-  {% if  page.package == "Gestion-projet" %}
+  {% if  page.package == "Gestionprojet" %}
     {{- page.content | markdownify -}}
   {% endif %}
 {% endfor %}
