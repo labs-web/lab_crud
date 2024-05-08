@@ -5,9 +5,13 @@ presentation: Analyse-Techniques
 order: 2
 ---
 
+<!-- new slide -->
+
 # Analyse Techniques
 
-## Les Package Utilisé
+<!-- new slide -->
+
+## Les package utilisé
 
 - Font Awsome Icons:
   - [Documentation : https://www.npmjs.com/package/@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
