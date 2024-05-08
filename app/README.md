@@ -41,12 +41,18 @@ php artisan migrate
 ```
 8. Exécuter les seeders pour peupler la base de données :
    
-````bash
+```bash
 php artisan db:seed
 ```
 
 9. Installer les dépendances npm :
 
-````bash
-npm install
+```bash
+php artisan serve
+```
+
+- Compiler les assets avec npm :
+
+```bash
+npm run build
 ```
