@@ -21,5 +21,9 @@ return [
     'addProject' => 'Ajouter un Projet',
     'projetAdded' => 'Le projet a été ajouté avec succès..',
     'import' => 'Import',
-    'export' => 'Export'
+    'export' => 'Export',
+    'cancel' => 'Quitter',
+    'add' => 'Ajouter',
+    'edit' => 'Editer'
+
 ];

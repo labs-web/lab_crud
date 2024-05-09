@@ -197,6 +197,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         //spatie
         Spatie\Permission\PermissionServiceProvider::class,
+        // matewebsite Excel
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -213,6 +215,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        // matewebsite Excel
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ])->toArray(),
 
 ];

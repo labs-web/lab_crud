@@ -13,7 +13,6 @@
                 <div class="col-sm-6">
                     <h1>{{ __('GestionProjets/projet/message.projects') }}</h1>
                 </div>
-                @can('create-ProjetController')
                     <div class="col-sm-6">
                         <div class="float-sm-right">
                             <a href="{{ route('projets.create') }}" class="btn btn-info">
@@ -22,7 +21,6 @@
                             </a>
                         </div>
                     </div>
-                @endcan
             </div>
         </div>
     </div>
