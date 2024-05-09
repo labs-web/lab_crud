@@ -53,5 +53,9 @@ order: 5
 
 ### Gestion des exceptions 
 
--  Nous avons mis en place une gestion efficace des exceptions pour traiter les erreurs de manière optimale. 
--  Plutôt que d'utiliser des exceptions pour chaque type d'erreur, ce qui aurait pu alourdir notre code.
+- Nous avons adopté une approche de gestion des exceptions afin de traiter les erreurs de manière efficace et efficiente.
+-  Cette décision découle de la nécessité de gérer les situations anormales qui peuvent survenir lors de l'exécution de notre application, telles que des entrées utilisateur incorrectes, des erreurs de connexion, ou d'autres scénarios imprévus.
+
+- Nous avions envisagé d'utiliser des exceptions spécifiques pour chaque type d'erreur, mais nous avons rapidement réalisé que cette approche pouvait alourdir notre code et le rendre moins lisible.
+-  En effet, la multiplication des blocs "try-catch" pour gérer chaque exception individuellement aurait rendu notre code complexe et difficile à maintenir.
+  
