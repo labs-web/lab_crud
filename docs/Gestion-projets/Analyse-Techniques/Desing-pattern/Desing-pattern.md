@@ -6,6 +6,8 @@ order:  7
 ---
 
 ## Desing pattern
+
+
 ![Desing pattern](/lab_crud/Gestion-projets/Analyse-Techniques/Desing-pattern/images/Desing-pattern.png){:width="90%"}*figure: Desing pattern*
 
 
