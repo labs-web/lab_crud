@@ -2,7 +2,7 @@
 layout: default
 package: GestionProjects
 presentationPackage: GestionProjects
-order: 7
+order: 6
 ---
  <!-- new slide -->
 ## Maquttes
