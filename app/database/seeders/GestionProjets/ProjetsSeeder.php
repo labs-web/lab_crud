@@ -12,6 +12,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\Schema;
 use Psy\Readline\Hoa\Console;
 
+
+
 class ProjetsSeeder extends Seeder
 {
     public function run(): void
@@ -23,16 +25,18 @@ class ProjetsSeeder extends Seeder
         Projet::truncate();
         Schema::enableForeignKeyConstraints();
 
-        // TODO : get data from csv file
+        // TODO : Organisation de code , espaces 
+        // get data from csv file
         $csvFile = fopen(base_path("database/data/projets.csv"), "r");
         $firstline = true;
         $i = 0;
         while (($data = fgetcsv($csvFile)) !== FALSE) {
 
+
             if (!$firstline) {
                 Projet::create([
-                    "nom" => $data['0'],
-                    "description" => $data['1']
+                    "nom"=>$data['0'],
+                    "description" =>$data['1']
                 ]);
             }
             $firstline = false;
@@ -67,5 +71,6 @@ class ProjetsSeeder extends Seeder
 
         $admin->givePermissionTo($projectManagerRolePermissions);
         $membre->givePermissionTo($projectMembreRolePermissions);
+
     }
 }
