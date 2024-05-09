@@ -1,7 +1,9 @@
 /.phpunit.cache
 /.phpunit.result.cache
 /node_modules
-/public/build
+
+# La publication du répertoire /public/build est nécessaire car il contient les fichiers CSS et JS compilés par Vite.
+# /public/build
 /public/hot
 /public/storage
 /storage/*.key

@@ -24,6 +24,8 @@ class ProjetController extends AppBaseController
 
     public function index(Request $request)
     {
+        // TODO : Il faut contacter la base de données une seul fois
+        // TODO : Il doit supporter le partage des liens avec pagination et recherche
         $projectData = $this->projectRepository->paginate();
         if ($request->ajax()) {
             $searchValue = $request->get('searchValue');

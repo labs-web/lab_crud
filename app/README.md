@@ -18,6 +18,9 @@ cd app
 ```bash
 composer install
 ```
+
+<!-- TODO : nom install ? -->
+
 4. Créer un fichier .env en copiant .env.example :
    
 ```bash
@@ -61,3 +64,6 @@ php artisan serve
 ```bash
 npm run build
 ```
+
+<!-- TODO :Loin and password   -->
+## Loin and password 
