@@ -9,7 +9,7 @@ order: 9
 
 #### List des Projet
 
-![index](/lab_crud/Gestion-projets/conception/maquettes/images/list_des_projets.png){:width="999px"}
+![index](/lab_crud/Gestion-projets/conception/maquettes/images/list_des_projets.png){:width="990px"}
 _figure: List des Projet_
 
 
@@ -26,7 +26,7 @@ _figure: Ajouter un Projet_
 
 #### Modifier un Projet
 
-![index](/lab_crud/Gestion-projets/conception/maquettes/images/modifier_le_projet.png){:width="990px"}
+![index](/lab_crud/Gestion-projets/conception/maquettes/images/modifier_le_projet.png){:width="999px"}
 _figure: Modifier le Projet_
 
 <!-- new slide -->
