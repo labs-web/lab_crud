@@ -1,5 +1,6 @@
 
 import 'bootstrap';
+import "../../node_modules/admin-lte/dist/js/adminlte";
 
 // Import CKEditor
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
-import "../../node_modules/admin-lte/dist/js/adminlte";
 
 $(document).ready(function() {
     function updateURLParameter(param, paramVal) {
@@ -79,8 +79,10 @@ $(document).ready(function() {
    
 });
 
-
-
 function submitForm() {
     document.getElementById("importForm").submit();
 }
+
+$(document).ready(function() {
+    $('.dropdown-toggle').dropdown();
+});

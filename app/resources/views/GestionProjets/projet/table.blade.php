@@ -15,21 +15,23 @@
                     
                     <td class="text-center">
                        
-                            <a href="{{ route('projets.show', $project) }}" class="btn btn-default btn-sm">
-                                <i class="far fa-eye"></i>
-                            </a>
-                            <a href="{{ route('projets.edit', $project) }}" class="btn btn-sm btn-default">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                            </a>
-                            <form action="{{ route('projets.destroy', $project) }}" method="POST"
-                                style="display: inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-danger"
-                                    onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce projet ?')">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </form>
+                        <a href="{{ route('projets.show', $project) }}" class="btn btn-default btn-sm">
+                            <i class="far fa-eye"></i>
+                        </a>
+                        
+                        <a href="{{ route('projets.edit', $project) }}" class="btn btn-sm btn-default">
+                            <i class="fas fa-pen-square"></i>
+                        </a>
+                        
+                        <form action="{{ route('projets.destroy', $project) }}" method="POST" style="display: inline;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-sm btn-danger"
+                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce projet ?')">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                        
                     </td>
                 </tr>
             @endforeach
@@ -43,14 +45,14 @@
                 id="importForm">
                 @csrf
                 <label for="upload" class="btn btn-default btn-sm font-weight-normal">
-                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <i class="fas fa-file-download"></i>
                     {{ __('GestionProjets/projet/message.import') }}
                 </label>
                 <input type="file" id="upload" name="file" style="display:none;" onchange="submitForm()" />
             </form>
             <form>
                 <a href="{{ route('projets.export') }}" class="btn btn-default btn-sm mt-0 mx-2">
-                    <i class="fa-solid fa-file-export"></i>
+                    <i class="fas fa-file-export"></i>
                     {{ __('GestionProjets/projet/message.export') }}</a>
             </form>
 
