@@ -35,5 +35,6 @@ _figure: Modifier le Projet_
 #### Details de projet
 
 ![index](/lab_crud/Gestion-projets/conception/maquettes/images/details_de_projet.png){:width="999px"}
-_figure: Details de Projet_
+*figure: Details de Projet*
+
 <!-- new slide -->
