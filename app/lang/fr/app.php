@@ -2,7 +2,7 @@
 
 return [
     'add' => 'Ajouter',
-    'rechercher'=>"بحث",
+    'rechercher'=>"Rechercher",
     'delete' => 'Supprimer',
     'edit' => 'Modifier',
     'cancel' => 'Annuler',
@@ -10,5 +10,8 @@ return [
     'import' => 'IMPORTER',
     'back' => 'Retour',
     'name' => 'Nom',
-    'action'=> 'Action'
+    'action'=> 'Action',
+    'detail' => 'Detail',
+    'description' => 'Description',
+    'list' => 'List'
 ];

@@ -24,7 +24,7 @@ class ProjetController extends AppBaseController
 
     public function index(Request $request)
     {
-        $projectData = $this->projectRepository->paginate();
+       
         if ($request->ajax()) {
             $searchValue = $request->get('searchValue');
             if ($searchValue !== '') {
@@ -33,6 +33,7 @@ class ProjetController extends AppBaseController
                 return view('GestionProjets.projet.index', compact('projectData'))->render();
             }
         }
+        $projectData = $this->projectRepository->paginate();
         return view('GestionProjets.projet.index', compact('projectData'));
     }
 

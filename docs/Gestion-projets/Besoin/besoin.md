@@ -1,11 +1,10 @@
 ---
 layout: default
-chapitre: Besoin
-presentation: Besoin
+package: GestionProjects
+presentationPackage: GestionProjects
+presentation: GestionProjects
 order: 3
 ---
-
-
 # Besoin 
 {:class="sectionHeader"}
 
@@ -13,6 +12,9 @@ order: 3
 
 ## Empathie avec chef de projet
 ![Empathie de chef de projet](/lab_crud/Gestion-projets/Besoin/images/empathyChef.PNG){:width="900px"}
+
+<!-- note -->
+
 
 ### Chef de projet
 
@@ -41,7 +43,7 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 
 ## Définir le problème
 
-![Définir le problem](./images/problem.jpg){:width="700px"}
+![Définir le problem](/lab_crud/Gestion-projets/Besoin/images/problem.jpg){:width="700px"}
 *figure: définir le problème*
 
 <!-- note -->
@@ -49,3 +51,4 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 Passer un temps considérable à consulter et naviguer entre les différents projets en raison de la lenteur du téléchargement des données, causée par un volume important de données.
 
 <!-- new slide -->
+

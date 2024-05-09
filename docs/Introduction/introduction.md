@@ -2,11 +2,15 @@
 layout: default
 chapitre: introduction
 presentation: introduction
+package: GestionProjects
+presentationPackage: GestionProjects
 order: 2
 ---
-
-# Introduction
-![Introduction](./images/introduction.jpg){:width="900px"}*figure: Introduction*
+# Rapport Gestion Projets
+{:class="sectionHeader"}
+<!-- new slide -->
+## Introduction
+![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
 

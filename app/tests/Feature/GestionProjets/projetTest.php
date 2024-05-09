@@ -9,12 +9,31 @@ use App\Models\GestionProjets\Projet;
 use Tests\TestCase;
 use App\Exceptions\GestionProjets\ProjectAlreadyExistException;
 
+/**
+ * Classe de test pour tester les fonctionnalités du module de projets.
+*/
 class projetTest extends TestCase
 {
     use DatabaseTransactions;
+
+    /**
+     * Le référentiel de projets utilisé pour les tests.
+     *
+     * @var ProjetRepository
+    */
     protected $projectRepository;
+
+    /**
+     * L'utilisateur utilisé pour les tests.
+     *
+     * @var User
+    */
     protected $user;
 
+
+    /**
+     * Met en place les préconditions pour chaque test.
+    */
     protected function setUp(): void
     {
         parent::setUp();
@@ -22,7 +41,10 @@ class projetTest extends TestCase
         $this->user = User::factory()->create();
     }
 
-    public function test_get_paginated_projects()
+    /**
+     * Teste la pagination des projets.
+    */
+    public function test_paginate()
     {
         $this->actingAs($this->user);
         $projectData = [
@@ -36,7 +58,10 @@ class projetTest extends TestCase
     }
 
 
-    public function test_create_project()
+    /**
+     * Teste la création d'un projet.
+    */
+    public function test_create()
     {
         $this->actingAs($this->user);
         $projectData = [
@@ -48,6 +73,9 @@ class projetTest extends TestCase
         $this->assertEquals($projectData['nom'], $project->nom);
     }
 
+    /**
+     * Teste la création d'un projet déjà existant.
+    */
     public function test_create_project_already_exist()
     {
         $this->actingAs($this->user);
@@ -69,8 +97,10 @@ class projetTest extends TestCase
         }
     }
 
-
-    public function test_update_data()
+    /**
+     * Teste la mise à jour d'un projet.
+    */
+    public function test_update()
     {
         $this->actingAs($this->user);
         $project = Projet::factory()->create();
@@ -83,7 +113,9 @@ class projetTest extends TestCase
         $this->assertDatabaseHas('projets', $projectData);
     }
 
-
+    /**
+     * Teste la suppression d'un projet.
+    */
     public function test_delete_project()
     {
         $this->actingAs($this->user);
@@ -92,7 +124,9 @@ class projetTest extends TestCase
         $this->assertDatabaseMissing('projets', ['id' => $project->id]);
     }
 
-
+    /**
+     * Teste la recherche de projets.
+    */
     public function test_project_search()
     {
         $this->actingAs($this->user);
