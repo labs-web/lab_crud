@@ -50,10 +50,7 @@ class ProjetsSeeder extends Seeder
             Permission::create(['name' => $permissionName, 'guard_name' => 'web']);
         }
 
-        $memberRolePermissions = [
-            "index-ProjetController",
-            "show-ProjetController",
-        ];
+       
 
         $projectManagerRolePermissions = [
             'index-ProjetController',
@@ -67,10 +64,10 @@ class ProjetsSeeder extends Seeder
             'import-ProjetController'
         ];
 
-        $membreRole = Role::where('name', User::MEMBRE)->first();
-        $membreRole->givePermissionTo($memberRolePermissions);
+       
+        Role::create(['name' => 'admin', 'guard_name' => 'web']);
 
-        $chefRole = Role::where('name', User::CHEF_DE_PROJET)->first();
+        $chefRole = Role::where('name', 'admin')->first();
         $chefRole->givePermissionTo($projectManagerRolePermissions);
        
     }

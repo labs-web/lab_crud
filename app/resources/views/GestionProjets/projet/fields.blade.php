@@ -13,27 +13,9 @@
                 <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
-        <div class="form-group">
-            <label for="date_debut">{{ __('GestionProjets/projet/message.startDate') }} <span
-                    class="text-danger">*</span></label>
-            <input name="date_debut" type="date" class="form-control" id="date_debut"
-                placeholder="Sélectionnez la date de début"
-                value="{{ $dataToEdit ? $dataToEdit->date_debut : old('date_debut') }}">
-            @error('date_debut')
-                <div class="text-danger">{{ $message }}</div>
-            @enderror
-        </div>
+        
 
-        <div class="form-group">
-            <label for="date_de_fin">{{ __('GestionProjets/projet/message.endDate') }} <span
-                    class="text-danger">*</span></label>
-            <input name="date_de_fin" type="date" class="form-control" id="date_de_fin"
-                placeholder="Sélectionnez la date de fin"
-                value="{{ $dataToEdit ? $dataToEdit->date_de_fin : old('date_de_fin') }}">
-            @error('date_de_fin')
-                <div class="text-danger">{{ $message }}</div>
-            @enderror
-        </div>
+       
         <div class="form-group">
             <label for="inputDescription">{{ __('GestionProjets/projet/message.description') }}</label>
             <textarea name="description" id="editor" class="form-control" rows="7" placeholder="Entrez la description">

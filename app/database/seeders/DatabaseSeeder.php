@@ -7,9 +7,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Symfony\Component\Uid\NilUuid;
 
-use Database\Seeders\Autorisation\{
-    UserSeeder,
-    RoleSeeder
+use Database\Seeders\{
+    UserSeeder
 };
 
 use Database\Seeders\GestionProjets\{
@@ -23,7 +22,7 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        $this->call(GestionProjetsSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(GestionProjetsSeeder::class);
     }
 }

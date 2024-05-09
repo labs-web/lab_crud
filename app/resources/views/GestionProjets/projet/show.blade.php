@@ -39,12 +39,7 @@
                                     <p class="text-secondary">Aucune information disponible</p>
                                 @endif
                             </div>
-                            <!-- Description Field -->
-                            <div class="col-sm-12">
-                                <label for="description">{{ __('GestionProjets/projet/message.date') }}:</label>
-                                <p>{{ __('GestionProjets/projet/message.startDate') }}: {{ $fetchedData->date_debut }}</p>
-                                <p>{{ __('GestionProjets/projet/message.endDate') }}: {{ $fetchedData->date_de_fin }}</p>
-                            </div>
+                          
 
                         </div>
                     </div>

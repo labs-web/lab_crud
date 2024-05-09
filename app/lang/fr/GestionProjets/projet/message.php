@@ -2,6 +2,7 @@
 
 
 return [
+    "name" => 'Nom',
     'projects' => 'Liste des projets',
     'task' => 'Les tâches',
     'addProjet' => 'Ajouter un projet',
@@ -19,4 +20,6 @@ return [
     'newProject' => 'Nouveau Projet',
     'addProject' => 'Ajouter un Projet',
     'projetAdded' => 'Le projet a été ajouté avec succès..',
+    'import' => 'Import',
+    'export' => 'Export'
 ];
