@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- TODO : Pagination en mide responsive web design -->
+
     <div class="content-header">
         @if (session('success'))
             <div class="alert alert-success alert-dismissible">
