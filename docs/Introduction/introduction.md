@@ -6,7 +6,7 @@ order: 2
 ---
 
 # Introduction
-![Introduction](./images/introduction.jpg){:width="900px"}*figure: Introduction*
+![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
 
