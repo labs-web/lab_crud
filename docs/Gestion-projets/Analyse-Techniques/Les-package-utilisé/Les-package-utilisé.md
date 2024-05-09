@@ -57,9 +57,14 @@ order: 5
 
 ### Gestion des exceptions 
 
+![Gestion des exceptions](/lab_crud/Gestion-projets/Analyse-Techniques/Les-package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
+
+<!-- note -->
 - Nous avons adopté une approche de gestion des exceptions afin de traiter les erreurs de manière efficace et efficiente.
+  
 -  Cette décision découle de la nécessité de gérer les situations anormales qui peuvent survenir lors de l'exécution de notre application, telles que des entrées utilisateur incorrectes, des erreurs de connexion, ou d'autres scénarios imprévus.
 
 - Nous avions envisagé d'utiliser des exceptions spécifiques pour chaque type d'erreur, mais nous avons rapidement réalisé que cette approche pouvait alourdir notre code et le rendre moins lisible.
+  
 -  En effet, la multiplication des blocs "try-catch" pour gérer chaque exception individuellement aurait rendu notre code complexe et difficile à maintenir.
   
