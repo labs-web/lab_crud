@@ -92,7 +92,8 @@
  }
 
  .reveal h1,
- .reveal h2 {
+ .reveal h2, 
+ .reveal h3 {
    background-color: #00838F ;
    color: white;
  }
