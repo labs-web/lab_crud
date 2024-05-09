@@ -11,7 +11,7 @@ order: 6
 
 ### Extension de vs code
 
-<!-- new slide -->
+
 
 - cscode-icons ![vscode-icons](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/vscode-icons.jpg){:width="900px"}
   
