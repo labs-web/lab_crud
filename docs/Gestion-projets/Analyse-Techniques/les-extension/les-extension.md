@@ -40,7 +40,7 @@ order: 6
 
 - GitHub Copilot ![GitHub Copilot](/lab_crud/Gestion-projets/Analyse-Techniques/images/images/github-copilot.jpg)
   <!-- note -->
-  GitHub Copilot est un assistant de codage innovant alimenté par l’IA et développé par GitHub et OpenAI. Il utilise des modèles d’apprentissage automatique formés sur une grande quantité de code pour fournir des suggestions et des compléments de code intelligents.
+  GitHub Copilot est un assistant de codage innovant alimenté par l’IA et développé par GitHub et OpenAI. Il utilise des modèles d’apprentissage automatique formés sur une grande quantité de code pour fournir des suggestions et des compléments de code intelligents. 
 
 - Git History
 - Git Graph
