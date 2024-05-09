@@ -68,6 +68,10 @@
            console.error( 'Il y a eu un problème lors de l\'initialisation de l\'éditeur.', error );
        } );
    ```
+      - Livrable :
+   ```bash
+   [Documentation Laravel Excel - Installation](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)
+   ```
 
 6. **Laravel Spatie**
    - Installation du package 
@@ -77,4 +81,8 @@
    - Ajoutez le fournisseur de services dans votre fichier `config/app.php` dans `'providers'`:
    ```bash
    Spatie\Permission\PermissionServiceProvider::class,
+   ```
+      - Livrable :
+   ```bash
+   [Documentation Laravel Excel - Installation](https://spatie.be/docs/laravel-permission/v6/installation-laravel)
    ```
