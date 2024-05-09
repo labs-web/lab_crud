@@ -18,29 +18,31 @@ class ProjetsSeeder extends Seeder
 {
     public function run(): void
     {
+        $AdminRole = User::ADMIN;
+        $MembreRole = User::MEMBRE;
 
         Schema::disableForeignKeyConstraints();
         Projet::truncate();
         Schema::enableForeignKeyConstraints();
-   
+
         // get data from csv file
         $csvFile = fopen(base_path("database/data/projets.csv"), "r");
         $firstline = true;
         $i = 0;
         while (($data = fgetcsv($csvFile)) !== FALSE) {
 
-          
+
 
             if (!$firstline) {
 
                 Projet::create([
                     "nom"=>$data['0'],
                     "description" =>$data['1']
-                ]);    
+                ]);
             }
             $firstline = false;
         }
-   
+
         fclose($csvFile);
 
         $actions = ['index', 'show', 'create', 'store', 'edit', 'update', 'destroy', 'export', 'import'];
@@ -50,7 +52,6 @@ class ProjetsSeeder extends Seeder
             Permission::create(['name' => $permissionName, 'guard_name' => 'web']);
         }
 
-       
 
         $projectManagerRolePermissions = [
             'index-ProjetController',
@@ -64,11 +65,16 @@ class ProjetsSeeder extends Seeder
             'import-ProjetController'
         ];
 
-       
-        Role::create(['name' => 'admin', 'guard_name' => 'web']);
+        $projectMembreRolePermissions = [
+            'index-ProjetController',
+            'show-ProjetController',
+        ];
 
-        $chefRole = Role::where('name', 'admin')->first();
-        $chefRole->givePermissionTo($projectManagerRolePermissions);
-       
+        $admin = Role::where('name', $AdminRole)->first();
+        $membre = Role::where('name', $MembreRole)->first();
+
+        $admin->givePermissionTo($projectManagerRolePermissions);
+        $membre->givePermissionTo($projectMembreRolePermissions);
+
     }
 }
