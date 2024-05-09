@@ -31,8 +31,9 @@ order: 5
 - Laravel Blade Snippets
 - Javascript(ES6) code snippers
 - GitLens ![GitLens](/lab_crud/Gestion-projets/Analyse-Techniques/images/images/gitlens.jpg)
+  <!-- note -->
   GitLens est une extension puissante qui intègre les fonctionnalités de Git directement dans votre éditeur. Avec GitLens, vous pouvez explorer la paternité du code, consulter l’historique des livraisons et obtenir des informations précieuses sur les modifications du code grâce à des annotations ligne par ligne.
- <!-- note -->
+ 
 
 - GitHub Copilot
 - Git History
