@@ -2,14 +2,15 @@
 layout: default
 chapitre: Desing pattern
 presentation: Desing pattern
-
+package: GestionProjects
+presentationPackage: GestionProjects
 order:  7
 ---
 
 ## Desing pattern
 
 
-![Desing pattern](/lab_crud/Gestion-projets/Analyse-Techniques/Desing-pattern/images/Desing-pattern.png){:width="60%"}*figure: Desing pattern*
+![Desing pattern](/lab_crud/Gestion-projets/Analyse-Techniques/Desing-pattern/images/Desing-pattern.jpg){:width="90%"}*figure: Desing pattern*
 
 
 
