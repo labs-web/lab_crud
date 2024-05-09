@@ -86,3 +86,13 @@
    ```bash
    [Documentation Laravel Excel - Installation](https://spatie.be/docs/laravel-permission/v6/installation-laravel)
    ```
+
+7. **jquery**
+   - Installation du package 
+   ```php
+   npm install jquery@3.6.0 --save-dev
+   ```
+      - Livrable :
+   ```bash
+   [Documentation jquery](https://www.npmjs.com/package/jquery)
+   ```
