@@ -23,17 +23,12 @@ class ProjetsSeeder extends Seeder
         Projet::truncate();
         Schema::enableForeignKeyConstraints();
    
-        // TODO : Organisation de code , espaces 
         // get data from csv file
         $csvFile = fopen(base_path("database/data/projets.csv"), "r");
         $firstline = true;
         $i = 0;
         while (($data = fgetcsv($csvFile)) !== FALSE) {
-
-          
-
             if (!$firstline) {
-
                 Projet::create([
                     "nom"=>$data['0'],
                     "description" =>$data['1']
@@ -41,18 +36,12 @@ class ProjetsSeeder extends Seeder
             }
             $firstline = false;
         }
-   
         fclose($csvFile);
-
         $actions = ['index', 'show', 'create', 'store', 'edit', 'update', 'destroy', 'export', 'import'];
-
         foreach ($actions as $action) {
             $permissionName = $action . '-' . "ProjetController";
             Permission::create(['name' => $permissionName, 'guard_name' => 'web']);
         }
-
-       
-
         $projectManagerRolePermissions = [
             'index-ProjetController',
             'show-ProjetController',
@@ -64,12 +53,8 @@ class ProjetsSeeder extends Seeder
             'export-ProjetController',
             'import-ProjetController'
         ];
-
-       
         Role::create(['name' => 'admin', 'guard_name' => 'web']);
-
         $chefRole = Role::where('name', 'admin')->first();
         $chefRole->givePermissionTo($projectManagerRolePermissions);
-       
     }
 }

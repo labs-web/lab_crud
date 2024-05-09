@@ -12,7 +12,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="nav-icon fas fa-table"></i>
-                                {{ __('GestionProjets/projet/message.editProjet') }}
+                                {{ __('app.edit') }}
                             </h3>
                         </div>
                         <!-- Obtenir le formulaire -->
