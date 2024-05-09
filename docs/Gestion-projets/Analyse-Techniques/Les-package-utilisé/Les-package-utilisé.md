@@ -4,9 +4,6 @@ package: GestionProjects
 presentationPackage: GestionProjects
 order: 5
 ---
-
-<!-- new slide -->
-
 # Analyse Techniques
 
 <!-- new slide -->
@@ -54,5 +51,7 @@ order: 5
   - **Commande:** *composer require maatwebsite/excel:^3.1*
   - **Version:** 3.1
 
-- Gestion des exceptions 
--  
+### Gestion des exceptions 
+
+-  Nous avons mis en place une gestion efficace des exceptions pour traiter les erreurs de manière optimale. 
+-  Plutôt que d'utiliser des exceptions pour chaque type d'erreur, ce qui aurait pu alourdir notre code.
