@@ -18,10 +18,12 @@ order: 6
 <!-- note --> 
   vscode-icons apporte une touche de brillance visuelle à votre espace de travail en remplaçant les icônes de fichiers par défaut par une vaste collection d’icônes attrayantes et intuitives.
 
+<!-- new slide -->
 
 - Prettier ![Prettier](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/prettier.jpg){:width="900px"}
   
-  <!-- note -->
+<!-- note -->
+
   Prettier est un formateur de code largement adopté qui permet d’appliquer un style de code cohérent à l’ensemble de vos projets. Il prend en charge différents langages de programmation et formate automatiquement votre code selon des règles prédéfinies, améliorant ainsi la lisibilité et réduisant les conflits de style.
 
 <!-- new slide -->
@@ -49,21 +51,24 @@ order: 6
 
 - GitLens ![GitLens](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/gitlens.jpg)
   
-  <!-- note -->
+<!-- note -->
+
   GitLens est une extension puissante qui intègre les fonctionnalités de Git directement dans votre éditeur. Avec GitLens, vous pouvez explorer la paternité du code, consulter l’historique des livraisons et obtenir des informations précieuses sur les modifications du code grâce à des annotations ligne par ligne.
  
 <!-- new slide -->
 
 - GitHub Copilot ![GitHub Copilot](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/github-copilot.jpg)
   
-  <!-- note -->
+<!-- note -->
+
   GitHub Copilot est un assistant de codage innovant alimenté par l’IA et développé par GitHub et OpenAI. Il utilise des modèles d’apprentissage automatique formés sur une grande quantité de code pour fournir des suggestions et des compléments de code intelligents. 
 
 <!-- new slide -->
 
 - Git History ![Git History](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Githistory.png)
   
-  <!-- note -->
+<!-- note -->
+
   Git History est une autre extension Git utile pour VS Code qui vous permet de visualiser et de rechercher l'historique Git d'un fichier ou d'un dépôt. Elle dispose d'une interface utilisateur graphique simple qui affiche des informations sur chaque commit, telles que l'auteur, la date et le message. Vous pouvez également consulter la différence pour chaque commit afin de voir exactement quelles modifications ont été apportées. 
 
 <!-- new slide -->
@@ -71,6 +76,7 @@ order: 6
 - Git Graph ![Git Graph](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Gitgraph.png)
 
 <!-- note -->
+
 Git Graph est une extension Git puissante et intuitive qui fournit une représentation visuelle interactive de la structure des branches de votre dépôt Git. Elle affiche un graphique de toutes les branches et de tous les commits de votre dépôt, vous permettant de voir comment ils sont liés et comment ils ont évolué au fil du temps.
 
 <!-- new slide -->
@@ -78,6 +84,7 @@ Git Graph est une extension Git puissante et intuitive qui fournit une représen
 - Composer ![Composer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/composer1.png)
 
 <!-- note -->
+
 L'extension TODO Highlight contribue aux commandes, TODO-Highlight: List highlighted annotations et TODO-Highlight: Toggle highlight, que vous pouvez trouver dans la palette de commandes (Ctrl+Maj+P). La commande TODO-Highlight: Toggle highlight vous permet de désactiver ou d'activer rapidement le surlignage.
 
 <!-- new slide -->
@@ -85,6 +92,7 @@ L'extension TODO Highlight contribue aux commandes, TODO-Highlight: List highlig
 - Json ![Json](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/json.png)
 
 <!-- note -->
+
 JSON est un format de données courant dans les fichiers de configuration tels que package.json ou project.json. Nous l'utilisons également largement dans Visual Studio Code pour nos fichiers de configuration. Lors de l'ouverture d'un fichier se terminant par .json, VS Code propose des fonctionnalités pour simplifier l'écriture ou la modification du contenu du fichier.
 
 <!-- new slide -->
@@ -92,6 +100,7 @@ JSON est un format de données courant dans les fichiers de configuration tels q
 - Luna Paint- Image Editor ![Luna Paint- Image Editor](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Luna.PNG)
 
 <!-- note -->
+
 Luna Paint est une extension pour VS Code qui vous permet de modifier des images raster directement depuis l'éditeur. Il vous suffit d'ouvrir une image depuis l'explorateur et de commencer à l'éditer comme n'importe quel autre fichier.
 
 <!-- new slide -->
@@ -99,6 +108,7 @@ Luna Paint est une extension pour VS Code qui vous permet de modifier des images
 - Todo Tree ![Todo Tree](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/todo.PNG)
 
 <!-- note -->
+
 Cette extension recherche rapidement (en utilisant ripgrep) votre espace de travail pour les balises de commentaires telles que TODO et FIXME, et les affiche dans une vue arborescente dans la barre d'activités. Cette vue peut être tirée de la barre d'activités vers le volet de l'explorateur (ou n'importe où ailleurs où vous préférez qu'elle soit).
 
 <!-- new slide -->
@@ -106,6 +116,7 @@ Cette extension recherche rapidement (en utilisant ripgrep) votre espace de trav
 - Test Explorer UI ![Test Explorer UI](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.PNG)
 
 <!-- note -->
+
 Cette extension fournit une interface utilisateur extensible pour exécuter vos tests dans VS Code. Elle peut être utilisée avec n'importe quel framework de test s'il existe une extension Test Adapter correspondante.
 
 <!-- new slide -->
@@ -113,6 +124,7 @@ Cette extension fournit une interface utilisateur extensible pour exécuter vos 
 - Test Adapter Converter ![Test Adapter Converter](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.adapter.PNG)
 
 <!-- note -->
+
 Cette extension convertit l'API de l'interface utilisateur de l'Explorateur de tests en tests natifs de Visual Studio Code. Vous pouvez l'utiliser en définissant testExplorer.useNativeTesting: true dans vos paramètres utilisateur.
 
 <!-- new slide -->
@@ -128,6 +140,7 @@ Consultez le guide de démarrage SQLite pour obtenir des instructions, y compris
 - Laravel Blade Snippets ![Laravel Blade Snippets](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Laravel.PNG)
 
 <!-- note -->
+
 Extensions de fragments de code et prise en charge de la mise en évidence de syntaxe pour les fichiers Blade de Laravel dans Visual Studio Code.
   
 <!-- new slide -->
@@ -135,6 +148,7 @@ Extensions de fragments de code et prise en charge de la mise en évidence de sy
 - Javascript(ES6) code snippers ![Javascript(ES6) code snippers](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/js.PNG)
 
 <!-- note -->
+
 Cette extension contient des extraits de code pour JavaScript en syntaxe ES6 pour l'éditeur Vs Code (prend en charge à la fois JavaScript et TypeScript).
 
 <!-- new slide -->
@@ -142,6 +156,7 @@ Cette extension contient des extraits de code pour JavaScript en syntaxe ES6 pou
 - PHP: Unit Test Explorer ![PHP: Unit Test Explorer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/phpunittest.PNG)
 
 <!-- note -->
+
 Exécutez vos tests PHP en utilisant l'interface utilisateur de l'Explorateur de tests.
 
 <!-- new slide -->
@@ -149,6 +164,7 @@ Exécutez vos tests PHP en utilisant l'interface utilisateur de l'Explorateur de
 - PhP Debug ![PhP Debug](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/debug.PNG)
 
 <!-- note -->
+
   Cette extension est un adaptateur de débogage entre VS Code et Xdebug par Derick Rethans. Xdebug est une extension PHP (un fichier .so sous Linux et un fichier .dll sous Windows) qui doit être installée sur votre serveur.
 
 <!-- new slide -->
