@@ -16,11 +16,10 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap any application services.
+     * Migration by packages.
      */
     public function boot(): void
     {
-        // Migration by packages
         $this->loadMigrationsFrom($this->getMigrationPaths());
         
         // Bootstrap any application services.
