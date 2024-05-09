@@ -21,7 +21,10 @@ order: 6
 
 - PHP: Unit Test Explorer
 - PhP Debug
-- NMP Intellisence
+- NMP Intellisence ![NMP Intellisence](/lab_crud/Gestion-projets/Analyse-Techniques/images/images/npm-intellisense.jpg)
+  <!-- note -->
+  npm Intellisense vous permet de gagner du temps et de l’énergie en fournissant une auto-complétion intelligente pour les importations de paquets npm. Il suggère des noms de paquets au fur et à mesure que vous les saisissez, ce qui facilite l’importation de dépendances dans votre projet.
+
 - Markwdon All in One
 - Luna Paint- Image Editor
 - Live server ![Live server](/lab_crud/Gestion-projets/Analyse-Techniques/images/images/live-server.jpg)
@@ -35,7 +38,10 @@ order: 6
   GitLens est une extension puissante qui intègre les fonctionnalités de Git directement dans votre éditeur. Avec GitLens, vous pouvez explorer la paternité du code, consulter l’historique des livraisons et obtenir des informations précieuses sur les modifications du code grâce à des annotations ligne par ligne.
  
 
-- GitHub Copilot
+- GitHub Copilot ![GitHub Copilot](/lab_crud/Gestion-projets/Analyse-Techniques/images/images/github-copilot.jpg)
+  <!-- note -->
+  GitHub Copilot est un assistant de codage innovant alimenté par l’IA et développé par GitHub et OpenAI. Il utilise des modèles d’apprentissage automatique formés sur une grande quantité de code pour fournir des suggestions et des compléments de code intelligents.
+
 - Git History
 - Git Graph
 - Composer
