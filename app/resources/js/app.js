@@ -3,6 +3,10 @@ import 'bootstrap';
 import 'https://code.jquery.com/jquery-3.6.0.min.js'
 import "../../node_modules/admin-lte/dist/js/adminlte";
 import 'admin-lte/plugins/jquery/jquery';
+// Import jQuery
+import 'jquery/dist/jquery';
+// Import AdminLTE
+import "admin-lte/dist/js/adminlte";
 import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
 import 'admin-lte/dist/js/adminlte';
 
