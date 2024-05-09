@@ -13,7 +13,7 @@ order: 4
 
 ## Capturer les besoins techniques
 
-Les package utilisé
+### Les package utilisé
 
 ![Les package utilisé](./images/1_n2YyXncCgoWgemC6xjZG4w.jpg){:width="900px"}*figure: Les package utilisé*
 
@@ -49,37 +49,7 @@ Les package utilisé
   - **Commande:** *composer require spatie/laravel-permission*
   - **Version:** 6.0
 
-### Extension de vs code
-
-- cscode-icons ![vscode-icons](././images/vscode-icons.jpg)
-  <!-- note -->
-  vscode-icons apporte une touche de brillance visuelle à votre espace de travail en remplaçant les icônes de fichiers par défaut par une vaste collection d’icônes attrayantes et intuitives.
-
-- Todo Tree
-- Test Explorer UI 
-- Test Adapter Converter
-- SQLTools SQLite 
-- Prettier ![Prettier](./images/prettier.jpg)
-  <!-- note -->
-  Prettier est un formateur de code largement adopté qui permet d’appliquer un style de code cohérent à l’ensemble de vos projets. Il prend en charge différents langages de programmation et formate automatiquement votre code selon des règles prédéfinies, améliorant ainsi la lisibilité et réduisant les conflits de style.
-
-- PHP: Unit Test Explorer
-- PhP Debug
-- NMP Intellisence
-- Markwdon All in One
-- Luna Paint- Image Editor
-- Live server ![Live server](./images/live-server.jpg)
-  <!-- note -->
-  Live Server est une extension fantastique qui vous permet de créer un serveur de développement local avec rechargement en direct. Il vous permet de prévisualiser vos modifications HTML, CSS et JavaScript en temps réel, vous évitant ainsi d’avoir à actualiser manuellement le navigateur.
-
-- Laravel Blade Snippets
-- Javascript(ES6) code snippers
-- GitLens
-- GitHub Copilot
-- Git History
-- Git Graph
-- Composer
-- Json
-<!-- new slide -->
-
-
+- Laravel Excel:
+  - [Documentation : https://docs.laravel-excel.com/3.1/getting-started/](https://docs.laravel-excel.com/3.1/getting-started/)
+  - **Commande:** *composer require maatwebsite/excel:^3.1*
+  - **Version:** 3.1
