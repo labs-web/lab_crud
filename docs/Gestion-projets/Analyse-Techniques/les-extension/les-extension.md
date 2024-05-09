@@ -43,7 +43,7 @@ order: 6
 - Git Graph ![Git Graph](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Gitgraph.png)
 <!-- note -->
 Git Graph est une extension Git puissante et intuitive qui fournit une représentation visuelle interactive de la structure des branches de votre dépôt Git. Elle affiche un graphique de toutes les branches et de tous les commits de votre dépôt, vous permettant de voir comment ils sont liés et comment ils ont évolué au fil du temps.
-- Composer ![Composer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/composer.png)
+- Composer ![Composer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/composer1.png)
 <!-- note -->
 L'extension TODO Highlight contribue aux commandes, TODO-Highlight: List highlighted annotations et TODO-Highlight: Toggle highlight, que vous pouvez trouver dans la palette de commandes (Ctrl+Maj+P). La commande TODO-Highlight: Toggle highlight vous permet de désactiver ou d'activer rapidement le surlignage.
 - Json ![Json](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/json.png)
