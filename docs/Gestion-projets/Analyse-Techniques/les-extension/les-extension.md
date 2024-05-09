@@ -7,32 +7,24 @@ order: 6
 ---
 ### Extension de vs code
 
+![Prettier](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/3extensions.png)
+  
+{:class="hiddenPresentation"}
+<!-- note -->
 - Prettier ![Prettier](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/prettier.jpg)
   
-<!-- note -->
-
   Prettier est un formateur de code largement adopté qui permet d’appliquer un style de code cohérent à l’ensemble de vos projets. Il prend en charge différents langages de programmation et formate automatiquement votre code selon des règles prédéfinies, améliorant ainsi la lisibilité et réduisant les conflits de style.
-
-<!-- new slide -->
 
 
 - Markwdon All in One  ![Markwdon All in One](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/markdown-all-in-one.jpg)
 
 
-<!-- note -->
+
   Markdown All in One est une extension complète pour travailler avec des fichiers Markdown dans VS Code. Elle simplifie la création et l’édition de documents Markdown en offrant un large éventail de fonctionnalités et de raccourcis. Du formatage de base aux fonctionnalités avancées, Markdown All in One améliore l’expérience d’écriture et la productivité des utilisateurs de Markdown.
-
-
-<!-- new slide -->
 
 - Json ![Json](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/json.png)
 
-
-<!-- note -->
-
   JSON est un format de données courant dans les fichiers de configuration tels que package.json ou project.json. Nous l'utilisons également largement dans Visual Studio Code pour nos fichiers de configuration. Lors de l'ouverture d'un fichier se terminant par .json, VS Code propose des fonctionnalités pour simplifier l'écriture ou la modification du contenu du fichier.
-
-
 
   - NPM Intellisence ![NPM Intellisence](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/npm-intellisense.jpg)
     
