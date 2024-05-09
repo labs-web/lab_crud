@@ -25,15 +25,16 @@ order: 6
 <!-- note -->
 
   Prettier est un formateur de code largement adopté qui permet d’appliquer un style de code cohérent à l’ensemble de vos projets. Il prend en charge différents langages de programmation et formate automatiquement votre code selon des règles prédéfinies, améliorant ainsi la lisibilité et réduisant les conflits de style.
-
+  
 <!-- new slide -->
 
-- NPM Intellisence ![NPM Intellisence](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/npm-intellisense.jpg)
+- NPM Intellisence ![NPM Intellisence](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/npm-intellisense.jpg){:width="900px"}
   
   <!-- note -->
+
   npm Intellisense vous permet de gagner du temps et de l’énergie en fournissant une auto-complétion intelligente pour les importations de paquets npm. Il suggère des noms de paquets au fur et à mesure que vous les saisissez, ce qui facilite l’importation de dépendances dans votre projet.
 
-- Markwdon All in One ![Markwdon All in One](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/markdown-all-in-one.jpg)
+- Markwdon All in One ![Markwdon All in One](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/markdown-all-in-one.jpg){:width="900px"}
 
 <!-- new slide -->
 
