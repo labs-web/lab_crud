@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -15,10 +16,40 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap any application services.
+     * TODO : Migration par packages . Bootstrap any application services.
      */
     public function boot(): void
     {
-        //
+        // adapte mgration
+        $migrationsPath = database_path('migrations');
+        $paths = $this->getAllSubdirectoriesOptimized($migrationsPath);
+
+        $this->loadMigrationsFrom($paths);
+        Paginator::useBootstrap();
+    }
+
+    /**
+     * TODO : comments
+     */
+    function getAllSubdirectoriesOptimized($dir)
+    {
+        $subdirectories = [];
+
+        $items = scandir($dir);
+
+        foreach ($items as $item) {
+            if ($item !== '.' && $item !== '..') {
+                $path = $dir . DIRECTORY_SEPARATOR . $item;
+                if (is_dir($path)) {
+                    $subdirectories[] = $path;
+                    $subdirectoriesToAdd = $this->getAllSubdirectoriesOptimized($path);
+                    foreach ($subdirectoriesToAdd as $subdirToAdd) {
+                        $subdirectories[] = $subdirToAdd;
+                    }
+                }
+            }
+        }
+
+        return $subdirectories;
     }
 }
