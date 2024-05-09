@@ -12,7 +12,7 @@ order:  18
 ## MVC
 
 
-![MVC](./images/mvc.png){:width="90%"}*figure: MVC*
+![MVC](./images/mvc.png){:width="80%"}*figure: MVC*
 
 
 
