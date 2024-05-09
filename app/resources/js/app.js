@@ -1,15 +1,10 @@
-// Importation des dépendances Bootstrap et AdminLTE
-import "bootstrap";
-import "https://code.jquery.com/jquery-3.6.0.min.js";
-import "../../node_modules/admin-lte/dist/js/adminlte";
-import "admin-lte/plugins/jquery/jquery";
+import 'bootstrap';
 // Import jQuery
-import "jquery/dist/jquery";
+import 'jquery/dist/jquery';
 // Import AdminLTE
 import "admin-lte/dist/js/adminlte";
-import "admin-lte/plugins/bootstrap/js/bootstrap.bundle";
-import "admin-lte/dist/js/adminlte";
-import './app.recherche'
+import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
+import 'admin-lte/dist/js/adminlte';
 
 // Importation de CKEditor
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
