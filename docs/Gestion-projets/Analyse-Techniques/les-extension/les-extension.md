@@ -36,7 +36,7 @@ order: 6
   <!-- note -->
   GitHub Copilot est un assistant de codage innovant alimenté par l’IA et développé par GitHub et OpenAI. Il utilise des modèles d’apprentissage automatique formés sur une grande quantité de code pour fournir des suggestions et des compléments de code intelligents. 
 
-- Git History ![Git History](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Githistory.jpg)
+- Git History ![Git History](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Githistory.png)
   <!-- note -->
   Git History est une autre extension Git utile pour VS Code qui vous permet de visualiser et de rechercher l'historique Git d'un fichier ou d'un dépôt. Elle dispose d'une interface utilisateur graphique simple qui affiche des informations sur chaque commit, telles que l'auteur, la date et le message. Vous pouvez également consulter la différence pour chaque commit afin de voir exactement quelles modifications ont été apportées. 
 
