@@ -7,7 +7,9 @@ order:
 
 # Extension de vs code
 
-- cscode-icons
+- cscode-icons ![vscode-icons](./images/logo@3x.png)
+  <!-- note -->
+  
 - Todo Tree
 - Test Explorer UI 
 - Test Adapter Converter
@@ -26,4 +28,5 @@ order:
 - Git History
 - Git Graph
 - Composer
+- Json
 <!-- new slide -->
