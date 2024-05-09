@@ -87,7 +87,6 @@ $(document).ready(function() {
         fetchData(page, searchValue);
     });
 
-   
 });
 
 function submitForm() {
