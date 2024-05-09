@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!-- TODO : Upload Ajax de façon global dans app.js -->
 <!-- TODO : Pagination en mide responsive web design -->
 
     <div class="content-header">
