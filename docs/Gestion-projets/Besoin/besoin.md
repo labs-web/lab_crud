@@ -5,8 +5,6 @@ presentationPackage: GestionProjects
 presentation: GestionProjects
 order: 3
 ---
-
-
 # Besoin 
 {:class="sectionHeader"}
 
