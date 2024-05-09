@@ -1,6 +1,6 @@
 <?php
 
-
+// TODO : à simplifier
 return [
     "name" => 'Nom',
     'projects' => 'Liste des projets',
