@@ -1,6 +1,8 @@
 import 'bootstrap';
-import "../../node_modules/admin-lte/dist/js/adminlte";
-import 'admin-lte/plugins/jquery/jquery';
+// Import jQuery
+import 'jquery/dist/jquery';
+// Import AdminLTE
+import "admin-lte/dist/js/adminlte";
 import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
 import 'admin-lte/dist/js/adminlte';
 // Import CKEditor
@@ -16,6 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
+ClassicEditor
+    .create( document.querySelector( '#editor' ) )
+    .then( editor => {
+        window.editor = editor;
+    } )
+    .catch( error => {
+        console.error( 'There was a problem initializing the editor.', error );
+} );
 
 $(document).ready(function() {
     function updateURLParameter(param, paramVal) {
