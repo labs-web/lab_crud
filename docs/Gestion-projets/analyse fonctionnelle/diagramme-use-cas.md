@@ -8,6 +8,7 @@ order: 4
 # Analyse fonctionnelle
 {:class="sectionHeader"}
 
+<!-- new slide -->
 ## Ideation
 
 ![Ideation](/lab_crud/Gestion-projets/analyse fonctionnelle/images/ideation.jpg){:width="1000px"}
