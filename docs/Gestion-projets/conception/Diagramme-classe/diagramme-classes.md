@@ -11,5 +11,9 @@ order:  8
 
 ## Diagramme de classes    
 ![Diagramme de classes](/lab_crud/Gestion-projets/conception/Diagramme-classe/Images/Diagramme-classe.png){:width="50%"}*figure: diagramme de classe*
+<<<<<<< HEAD
+
+=======
+>>>>>>> 46799327d8f6ad0fd9bc0765a0f75c900f3c3f4a
 
 <!-- new slide -->
