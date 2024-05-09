@@ -5,7 +5,7 @@ presentationPackage: GestionProjects
 order: 7
 ---
  <!-- new slide -->
-# Maquttes
+# Maquettes
  <!-- new slide -->
 ## Gestion des Projets
 
