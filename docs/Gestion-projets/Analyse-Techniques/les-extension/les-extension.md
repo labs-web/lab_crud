@@ -7,14 +7,6 @@ order: 6
 ---
 ### Extension de vs code
 
-
-<!-- note --> 
-- cscode-icons ![vscode-icons](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/vscode-icons.jpg)
-  
-  vscode-icons apporte une touche de brillance visuelle à votre espace de travail en remplaçant les icônes de fichiers par défaut par une vaste collection d’icônes attrayantes et intuitives.
-
-<!-- new slide -->
-
 - Prettier ![Prettier](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/prettier.jpg)
   
 <!-- note -->
@@ -143,7 +135,9 @@ order: 6
 
   Exécutez vos tests PHP en utilisant l'interface utilisateur de l'Explorateur de tests.
 
-
+  - cscode-icons ![vscode-icons](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/vscode-icons.jpg)
+  
+  vscode-icons apporte une touche de brillance visuelle à votre espace de travail en remplaçant les icônes de fichiers par défaut par une vaste collection d’icônes attrayantes et intuitives.
 
   - PhP Debug ![PhP Debug](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/debug.PNG)
 
