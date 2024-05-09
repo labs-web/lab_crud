@@ -14,7 +14,6 @@ order: 6
 
   -  Prettier est un formateur de code largement adopté qui permet d’appliquer un style de code cohérent à l’ensemble de vos projets. Il prend en charge différents langages de programmation et formate automatiquement votre code selon des règles prédéfinies, améliorant ainsi la lisibilité et réduisant les conflits de style.
 
-
  -  Markdown All in One est une extension complète pour travailler avec des fichiers Markdown dans VS Code. Elle simplifie la création et l’édition de documents Markdown en offrant un large éventail de fonctionnalités et de raccourcis. Du formatage de base aux fonctionnalités avancées, Markdown All in One améliore l’expérience d’écriture et la productivité des utilisateurs de Markdown.
 
 - Cette extension recherche rapidement (en utilisant ripgrep) votre espace de travail pour les balises de commentaires telles que TODO et FIXME, et les affiche dans une vue arborescente dans la barre d'activités. Cette vue peut être tirée de la barre d'activités vers le volet de l'explorateur (ou n'importe où ailleurs où vous préférez qu'elle soit).
