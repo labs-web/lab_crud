@@ -6,6 +6,7 @@ presentation: GestionProjects
 order: 4
 ---
 # Analyse fonctionnelle
+{:class="sectionHeader"}
 
 ## Ideation
 
