@@ -19,7 +19,7 @@ order: 6
   vscode-icons apporte une touche de brillance visuelle à votre espace de travail en remplaçant les icônes de fichiers par défaut par une vaste collection d’icônes attrayantes et intuitives.
 
 
-- Prettier ![Prettier](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/prettier.jpg)
+- Prettier ![Prettier](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/prettier.jpg){:width="900px"}
   
   <!-- note -->
   Prettier est un formateur de code largement adopté qui permet d’appliquer un style de code cohérent à l’ensemble de vos projets. Il prend en charge différents langages de programmation et formate automatiquement votre code selon des règles prédéfinies, améliorant ainsi la lisibilité et réduisant les conflits de style.
