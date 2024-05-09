@@ -7,8 +7,6 @@ order: 7
  <!-- new slide -->
 ## Maquttes
 
-
-
 ### List des Projet
 
 ![index](/lab_crud/Gestion-projets/conception/maquettes/images/list_des_projets.png){:width="1300px"}
