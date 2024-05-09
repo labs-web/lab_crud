@@ -1,5 +1,10 @@
 # Installation Laravel
 
+
+## Installation de PHP
+
+<!-- TODO : version de PHP -->
+
 ## Guide de Démarrage pour Lab CRUD
 
 1. Ouvrez votre terminal.

@@ -25,6 +25,7 @@ class ProjetsSeeder extends Seeder
         Projet::truncate();
         Schema::enableForeignKeyConstraints();
 
+        // TODO : Organisation de code , espaces 
         // get data from csv file
         $csvFile = fopen(base_path("database/data/projets.csv"), "r");
         $firstline = true;
