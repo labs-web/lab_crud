@@ -33,9 +33,7 @@ class ProjetsSeeder extends Seeder
         while (($data = fgetcsv($csvFile)) !== FALSE) {
 
 
-
             if (!$firstline) {
-
                 Projet::create([
                     "nom"=>$data['0'],
                     "description" =>$data['1']
@@ -45,14 +43,11 @@ class ProjetsSeeder extends Seeder
         }
 
         fclose($csvFile);
-
         $actions = ['index', 'show', 'create', 'store', 'edit', 'update', 'destroy', 'export', 'import'];
-
         foreach ($actions as $action) {
             $permissionName = $action . '-' . "ProjetController";
             Permission::create(['name' => $permissionName, 'guard_name' => 'web']);
         }
-
 
         $projectManagerRolePermissions = [
             'index-ProjetController',

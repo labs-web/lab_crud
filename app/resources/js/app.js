@@ -1,13 +1,20 @@
+// Importation des dépendances Bootstrap et AdminLTE
 import 'bootstrap';
+import 'https://code.jquery.com/jquery-3.6.0.min.js'
+import "../../node_modules/admin-lte/dist/js/adminlte";
+import 'admin-lte/plugins/jquery/jquery';
 // Import jQuery
 import 'jquery/dist/jquery';
 // Import AdminLTE
 import "admin-lte/dist/js/adminlte";
 import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
 import 'admin-lte/dist/js/adminlte';
-// Import CKEditor
+
+// Importation de CKEditor
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialisation de CKEditor
     ClassicEditor
         .create(document.querySelector('#editor'))
         .then(editor => {
@@ -18,16 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
-ClassicEditor
-    .create( document.querySelector( '#editor' ) )
-    .then( editor => {
-        window.editor = editor;
-    } )
-    .catch( error => {
-        console.error( 'There was a problem initializing the editor.', error );
-} );
-
 $(document).ready(function() {
+    // Fonction pour mettre à jour un paramètre dans l'URL
     function updateURLParameter(param, paramVal) {
         var url = window.location.href;
         var hash = location.hash;
@@ -47,6 +46,7 @@ $(document).ready(function() {
         window.history.replaceState({ path: url }, '', url + hash);
     }
 
+    // Fonction pour récupérer les données avec AJAX
     function fetchData(page, searchValue) {
         $.ajax({
             url: '/projets/?page=' + page + '&searchValue=' + searchValue,
@@ -72,6 +72,7 @@ $(document).ready(function() {
         }
     }
 
+    // Gestion de l'événement de clic sur la pagination
     $('body').on('click', '.pagination a', function(param) {
         param.preventDefault();
         var page = $(this).attr('href').split('page=')[1];
@@ -79,21 +80,21 @@ $(document).ready(function() {
         var searchValue = $('#table_search').val();
         fetchData(page, searchValue);
     });
-    
 
+    // Gestion de l'événement de saisie dans la barre de recherche
     $('body').on('keyup', '#table_search', function() {
         var page = $('#page').val();
         var searchValue = $(this).val();
         fetchData(page, searchValue);
     });
 
-   
-});
+    // Soumission du formulaire
+    function submitForm() {
+        document.getElementById("importForm").submit();
+    }
 
-function submitForm() {
-    document.getElementById("importForm").submit();
-}
-
-$(document).ready(function() {
-    $('.dropdown-toggle').dropdown();
+    // Activation des dropdowns Bootstrap
+    $(document).ready(function() {
+        $('.dropdown-toggle').dropdown();
+    });
 });
