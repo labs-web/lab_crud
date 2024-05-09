@@ -4,9 +4,6 @@ package: GestionProjects
 presentationPackage: GestionProjects
 order: 5
 ---
-
-<!-- new slide -->
-
 # Analyse Techniques
 
 <!-- new slide -->
@@ -54,5 +51,11 @@ order: 5
   - **Commande:** *composer require maatwebsite/excel:^3.1*
   - **Version:** 3.1
 
-- Gestion des exceptions 
--  
+### Gestion des exceptions 
+
+- Nous avons adopté une approche de gestion des exceptions afin de traiter les erreurs de manière efficace et efficiente.
+-  Cette décision découle de la nécessité de gérer les situations anormales qui peuvent survenir lors de l'exécution de notre application, telles que des entrées utilisateur incorrectes, des erreurs de connexion, ou d'autres scénarios imprévus.
+
+- Nous avions envisagé d'utiliser des exceptions spécifiques pour chaque type d'erreur, mais nous avons rapidement réalisé que cette approche pouvait alourdir notre code et le rendre moins lisible.
+-  En effet, la multiplication des blocs "try-catch" pour gérer chaque exception individuellement aurait rendu notre code complexe et difficile à maintenir.
+  
