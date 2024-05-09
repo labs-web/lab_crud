@@ -4,7 +4,7 @@ chapitre: diagramme-classes
 presentation: diagramme-classes
 order: 5
 ---
-# Base de données
+# Conception
 {:class="sectionHeader"}
 
 <!-- new slide -->
