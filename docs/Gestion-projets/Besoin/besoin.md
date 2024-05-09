@@ -15,7 +15,8 @@ order: 3
 ## Empathie avec chef de projet
 ![Empathie de chef de projet](/lab_crud/Gestion-projets/Besoin/images/empathyChef.PNG){:width="900px"}
 
-<!-- new slide -->
+<!-- note -->
+
 
 ### Chef de projet
 
