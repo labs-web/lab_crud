@@ -10,7 +10,7 @@ order:  7
 ## MVC
 
 
-![MVC ](/lab_crud/Gestion-projets/realisation/MVC/images/MVC.png){:width="90%"}*figure: MVC*
+![MVC ](/lab_crud/Gestion-projets/realisation/MVC/images/mvc.png){:width="90%"}*figure: MVC*
 
 
 
