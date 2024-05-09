@@ -9,7 +9,7 @@ order: 6
 
 <!-- new slide -->
 
-## Diagramme de classe    
-![Diagramme de class](/lab_crud/Gestion-projets/Conception/Diagramme-classe/Images/Diagramme-classe.png){:width="90%"}*figure: diagramme de class*
+## Diagramme de classes    
+![Diagramme de classes](/lab_crud/Gestion-projets/Conception/Diagramme-classe/Images/Diagramme-classe.png){:width="90%"}*figure: diagramme de class*
 
 <!-- new slide -->
