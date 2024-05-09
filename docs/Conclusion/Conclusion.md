@@ -8,6 +8,7 @@ order: 80
 
 ---
 # Conclusion
+{:class="sectionHeader"}
 
 ![Conclusion](./images/conclusion.png){:width="900px"}*figure: Conclusion*
 
