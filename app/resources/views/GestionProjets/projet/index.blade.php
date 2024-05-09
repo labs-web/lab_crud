@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <!-- TODO : Pagination en mide responsive web design -->
+    <!-- TODO: Implement pagination for responsive web design -->
 
     <div class="content-header">
         @if (session('success'))
@@ -15,7 +15,8 @@
                 <div class="col-sm-6">
                     <h1>
                          @php
-                            title(__('app.list'), __('GestionProjets/projet/message.titre'), Config::get('app.locale') );
+                            // Generate the title using the title function
+                            echo title(__('app.list'), __('GestionProjets/projet/message.titre'), Config::get('app.locale'));
                         @endphp
                     </h1>
                 </div>

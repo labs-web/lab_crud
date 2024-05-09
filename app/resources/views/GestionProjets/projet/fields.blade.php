@@ -28,9 +28,8 @@
     </div>
 
     <div class="card-footer">
-        <a href="{{ route('projets.index') }}"
-            class="btn btn-default">{{ __('app.cancel') }}</a>
-        <button type="submit"
-            class="btn btn-info">{{ $dataToEdit ? __('app.edit') : __('app.add') }}</button>
+        <a href="{{ route('projets.index') }}" class="btn btn-default">{{ __('app.cancel') }}</a>
+        <button type="submit" class="btn btn-info ml-2">{{ $dataToEdit ? __('app.edit') : __('app.add') }}</button>
     </div>
+    
 </form>
