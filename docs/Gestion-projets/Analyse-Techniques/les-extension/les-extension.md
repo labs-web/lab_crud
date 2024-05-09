@@ -2,6 +2,7 @@
 layout: default
 package: GestionProjects
 presentationPackage: GestionProjects
+presentation: GestionProjects
 order: 6
 ---
 
