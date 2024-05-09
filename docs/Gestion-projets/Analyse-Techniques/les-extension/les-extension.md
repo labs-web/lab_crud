@@ -11,7 +11,7 @@ order: 6
 
 ### Extension de vs code
 
-<!-- new slide -->
+
 
 - cscode-icons ![vscode-icons](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/vscode-icons.jpg){:width="900px"}
   
@@ -28,28 +28,32 @@ order: 6
 
 <!-- new slide -->
 
-- NPM Intellisence ![NPM Intellisence](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/npm-intellisense.jpg)
+- NPM Intellisence ![NPM Intellisence](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/npm-intellisense.jpg){:width="900px"}
   
-  <!-- note -->
+<!-- note -->
+
   npm Intellisense vous permet de gagner du temps et de l’énergie en fournissant une auto-complétion intelligente pour les importations de paquets npm. Il suggère des noms de paquets au fur et à mesure que vous les saisissez, ce qui facilite l’importation de dépendances dans votre projet.
 
-- Markwdon All in One ![Markwdon All in One](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/markdown-all-in-one.jpg)
-
 <!-- new slide -->
 
-  <!-- note -->
+- Markwdon All in One ![Markwdon All in One](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/markdown-all-in-one.jpg){:width="900px"}
+
+
+<!-- note -->
   Markdown All in One est une extension complète pour travailler avec des fichiers Markdown dans VS Code. Elle simplifie la création et l’édition de documents Markdown en offrant un large éventail de fonctionnalités et de raccourcis. Du formatage de base aux fonctionnalités avancées, Markdown All in One améliore l’expérience d’écriture et la productivité des utilisateurs de Markdown.
 
-- Live server ![Live server](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/live-server.jpg)
-  
 <!-- new slide -->
 
-  <!-- note -->
+- Live server ![Live server](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/live-server.jpg){:width="900px"}
+  
+
+
+<!-- note -->
   Live Server est une extension fantastique qui vous permet de créer un serveur de développement local avec rechargement en direct. Il vous permet de prévisualiser vos modifications HTML, CSS et JavaScript en temps réel, vous évitant ainsi d’avoir à actualiser manuellement le navigateur.
 
 <!-- new slide -->
 
-- GitLens ![GitLens](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/gitlens.jpg)
+- GitLens ![GitLens](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/gitlens.jpg){:width="900px"}
   
 <!-- note -->
 
@@ -57,7 +61,7 @@ order: 6
  
 <!-- new slide -->
 
-- GitHub Copilot ![GitHub Copilot](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/github-copilot.jpg)
+- GitHub Copilot ![GitHub Copilot](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/github-copilot.jpg){:width="900px"}
   
 <!-- note -->
 
@@ -65,7 +69,7 @@ order: 6
 
 <!-- new slide -->
 
-- Git History ![Git History](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Githistory.png)
+- Git History ![Git History](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Githistory.png){:width="900px"}
   
 <!-- note -->
 
@@ -73,7 +77,7 @@ order: 6
 
 <!-- new slide -->
 
-- Git Graph ![Git Graph](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Gitgraph.png)
+- Git Graph ![Git Graph](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Gitgraph.png){:width="900px"}
 
 <!-- note -->
 
@@ -81,7 +85,7 @@ Git Graph est une extension Git puissante et intuitive qui fournit une représen
 
 <!-- new slide -->
 
-- Composer ![Composer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/composer1.png)
+- Composer ![Composer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/composer1.png){:width="900px"}
 
 <!-- note -->
 
@@ -89,7 +93,7 @@ L'extension TODO Highlight contribue aux commandes, TODO-Highlight: List highlig
 
 <!-- new slide -->
 
-- Json ![Json](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/json.png)
+- Json ![Json](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/json.png){:width="900px"}
 
 <!-- note -->
 
@@ -97,7 +101,7 @@ JSON est un format de données courant dans les fichiers de configuration tels q
 
 <!-- new slide -->
 
-- Luna Paint- Image Editor ![Luna Paint- Image Editor](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Luna.PNG)
+- Luna Paint- Image Editor ![Luna Paint- Image Editor](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Luna.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -105,7 +109,7 @@ Luna Paint est une extension pour VS Code qui vous permet de modifier des images
 
 <!-- new slide -->
 
-- Todo Tree ![Todo Tree](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/todo.PNG)
+- Todo Tree ![Todo Tree](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/todo.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -113,7 +117,7 @@ Cette extension recherche rapidement (en utilisant ripgrep) votre espace de trav
 
 <!-- new slide -->
 
-- Test Explorer UI ![Test Explorer UI](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.PNG)
+- Test Explorer UI ![Test Explorer UI](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -121,7 +125,7 @@ Cette extension fournit une interface utilisateur extensible pour exécuter vos 
 
 <!-- new slide -->
 
-- Test Adapter Converter ![Test Adapter Converter](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.adapter.PNG)
+- Test Adapter Converter ![Test Adapter Converter](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.adapter.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -129,7 +133,7 @@ Cette extension convertit l'API de l'interface utilisateur de l'Explorateur de t
 
 <!-- new slide -->
 
-- SQLTools SQLite ![SQLTools SQLite](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/sqlite.PNG)
+- SQLTools SQLite ![SQLTools SQLite](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/sqlite.PNG){:width="900px"}
 
 <!-- note -->
 Ce package fait partie de l'extension vscode-sqltools.
@@ -137,7 +141,7 @@ Consultez le guide de démarrage SQLite pour obtenir des instructions, y compris
 
 <!-- new slide -->
 
-- Laravel Blade Snippets ![Laravel Blade Snippets](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Laravel.PNG)
+- Laravel Blade Snippets ![Laravel Blade Snippets](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Laravel.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -145,7 +149,7 @@ Extensions de fragments de code et prise en charge de la mise en évidence de sy
   
 <!-- new slide -->
 
-- Javascript(ES6) code snippers ![Javascript(ES6) code snippers](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/js.PNG)
+- Javascript(ES6) code snippers ![Javascript(ES6) code snippers](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/js.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -153,7 +157,7 @@ Cette extension contient des extraits de code pour JavaScript en syntaxe ES6 pou
 
 <!-- new slide -->
 
-- PHP: Unit Test Explorer ![PHP: Unit Test Explorer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/phpunittest.PNG)
+- PHP: Unit Test Explorer ![PHP: Unit Test Explorer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/phpunittest.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -161,7 +165,7 @@ Exécutez vos tests PHP en utilisant l'interface utilisateur de l'Explorateur de
 
 <!-- new slide -->
 
-- PhP Debug ![PhP Debug](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/debug.PNG)
+- PhP Debug ![PhP Debug](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/debug.PNG){:width="900px"}
 
 <!-- note -->
 
