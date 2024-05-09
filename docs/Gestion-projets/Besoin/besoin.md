@@ -1,7 +1,7 @@
 ---
 layout: default
-chapitre: Besoin
-presentation: Besoin
+package: GestionProjects
+presentationPackage: GestionProjects
 order: 3
 ---
 
@@ -47,5 +47,16 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 <!-- note -->
 
 Passer un temps considérable à consulter et naviguer entre les différents projets en raison de la lenteur du téléchargement des données, causée par un volume important de données.
+
+<!-- new slide -->
+
+## Ideation
+
+![Ideation](/lab_crud/Gestion-projets/Besoin/images/ideation.jpg){:width="1000px"}
+*figure: ideation*
+
+<!-- note -->
+
+Conception et développement d'une application de gestion de projets, de tâches et de membres.
 
 <!-- new slide -->
