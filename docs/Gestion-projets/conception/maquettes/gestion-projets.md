@@ -9,7 +9,7 @@ order: 9
 
 #### List des Projet
 
-![index](/lab_crud/Gestion-projets/conception/maquettes/images/list_des_projets.png){:width="1300px"}
+![index](/lab_crud/Gestion-projets/conception/maquettes/images/list_des_projets.png){:width="1200px"}
 _figure: List des Projet_
 
 
