@@ -13,7 +13,7 @@ order: 6
 
 <!-- new slide -->
 
-- cscode-icons ![vscode-icons](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/vscode-icons.jpg)
+- cscode-icons ![vscode-icons](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/vscode-icons.jpg){:width="500px"}
   
 <!-- note --> 
   vscode-icons apporte une touche de brillance visuelle à votre espace de travail en remplaçant les icônes de fichiers par défaut par une vaste collection d’icônes attrayantes et intuitives.
