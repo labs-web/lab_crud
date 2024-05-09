@@ -5,6 +5,7 @@ presentationPackage: GestionProjects
 presentation: GestionProjects
 order: 5
 ---
+
 # Analyse Techniques
 {:class="sectionHeader"}
 
@@ -55,7 +56,7 @@ order: 5
 
 <!-- new slide -->
 
-### Gestion des exceptions 
+## Gestion des exceptions 
 
 ![Gestion des exceptions](/lab_crud/Gestion-projets/Analyse-Techniques/Les-package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
 
@@ -68,3 +69,4 @@ order: 5
   
 -  En effet, la multiplication des blocs "try-catch" pour gérer chaque exception individuellement aurait rendu notre code complexe et difficile à maintenir.
   
+<!-- new slide -->
