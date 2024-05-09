@@ -2,6 +2,8 @@
 layout: default
 chapitre: introduction
 presentation: introduction
+package: GestionProjects
+presentationPackage: GestionProjects
 order: 2
 ---
 

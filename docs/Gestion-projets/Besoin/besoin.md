@@ -50,13 +50,3 @@ Passer un temps considérable à consulter et naviguer entre les différents pro
 
 <!-- new slide -->
 
-## Ideation
-
-![Ideation](/lab_crud/Gestion-projets/Besoin/images/ideation.jpg){:width="1000px"}
-*figure: ideation*
-
-<!-- note -->
-
-Conception et développement d'une application de gestion de projets, de tâches et de membres.
-
-<!-- new slide -->
