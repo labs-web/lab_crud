@@ -1,3 +1,4 @@
+<!-- TODO : Organisation de menu package -->
 <!-- need to remove -->
 <li class="nav-item">
     <a href="{{ route('home') }}" class="nav-link {{ Request::is('/') ? 'active' : '' }}">
