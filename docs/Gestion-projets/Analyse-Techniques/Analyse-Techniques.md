@@ -2,7 +2,7 @@
 layout: default
 package: GestionProjects
 presentationPackage: GestionProjects
-order: 2
+order: 4
 ---
 
 <!-- new slide -->
