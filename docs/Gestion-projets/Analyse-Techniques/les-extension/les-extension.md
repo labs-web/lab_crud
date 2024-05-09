@@ -76,6 +76,7 @@ order: 6
 - Git Graph ![Git Graph](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Gitgraph.png)
 
 <!-- note -->
+
 Git Graph est une extension Git puissante et intuitive qui fournit une représentation visuelle interactive de la structure des branches de votre dépôt Git. Elle affiche un graphique de toutes les branches et de tous les commits de votre dépôt, vous permettant de voir comment ils sont liés et comment ils ont évolué au fil du temps.
 
 <!-- new slide -->
