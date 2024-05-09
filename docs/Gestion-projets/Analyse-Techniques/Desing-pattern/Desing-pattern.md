@@ -2,10 +2,11 @@
 layout: default
 chapitre: Desing pattern
 presentation: Desing pattern
-order:  8
+order:  7
 ---
 
-# Desing pattern
+## Desing pattern
+![Desing pattern](/lab_crud/Gestion-projets/Analyse-Techniques/Desing-pattern/images/Desing-pattern.png){:width="90%"}*figure: Desing pattern*
 
 
 Le projet **lab-crud** est conçu pour illustrer la mise en œuvre des opérations CRUD pour la gestion de projets, en utilisant le pattern Repository. Cette approche permet une manipulation efficace des données et met en avant nos compétences en développement backend.
