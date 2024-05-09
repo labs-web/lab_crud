@@ -1,3 +1,4 @@
+
 import 'bootstrap';
 
 // Import CKEditor
@@ -12,3 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('There was a problem initializing the editor.', error);
         });
 });
+
+import "../../node_modules/admin-lte/dist/js/adminlte";
