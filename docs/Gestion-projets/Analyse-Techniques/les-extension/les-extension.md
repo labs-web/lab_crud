@@ -43,20 +43,51 @@ order: 6
 - Git Graph ![Git Graph](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Gitgraph.png)
 <!-- note -->
 Git Graph est une extension Git puissante et intuitive qui fournit une représentation visuelle interactive de la structure des branches de votre dépôt Git. Elle affiche un graphique de toutes les branches et de tous les commits de votre dépôt, vous permettant de voir comment ils sont liés et comment ils ont évolué au fil du temps.
+
 - Composer ![Composer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/composer1.png)
 <!-- note -->
 L'extension TODO Highlight contribue aux commandes, TODO-Highlight: List highlighted annotations et TODO-Highlight: Toggle highlight, que vous pouvez trouver dans la palette de commandes (Ctrl+Maj+P). La commande TODO-Highlight: Toggle highlight vous permet de désactiver ou d'activer rapidement le surlignage.
+
 - Json ![Json](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/json.png)
 <!-- note -->
 JSON est un format de données courant dans les fichiers de configuration tels que package.json ou project.json. Nous l'utilisons également largement dans Visual Studio Code pour nos fichiers de configuration. Lors de l'ouverture d'un fichier se terminant par .json, VS Code propose des fonctionnalités pour simplifier l'écriture ou la modification du contenu du fichier.
-- Luna Paint- Image Editor
-- Todo Tree
-- Test Explorer UI 
-- Test Adapter Converter
-- SQLTools SQLite 
-- Laravel Blade Snippets
-- Javascript(ES6) code snippers
-- PHP: Unit Test Explorer
-- PhP Debug
+
+- Luna Paint- Image Editor ![Luna Paint- Image Editor](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Luna.PNG)
+<!-- note -->
+Luna Paint est une extension pour VS Code qui vous permet de modifier des images raster directement depuis l'éditeur. Il vous suffit d'ouvrir une image depuis l'explorateur et de commencer à l'éditer comme n'importe quel autre fichier.
+
+- Todo Tree ![Todo Tree](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/todo.PNG)
+<!-- note -->
+Cette extension recherche rapidement (en utilisant ripgrep) votre espace de travail pour les balises de commentaires telles que TODO et FIXME, et les affiche dans une vue arborescente dans la barre d'activités. Cette vue peut être tirée de la barre d'activités vers le volet de l'explorateur (ou n'importe où ailleurs où vous préférez qu'elle soit).
+
+- Test Explorer UI ![Test Explorer UI](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.PNG)
+<!-- note -->
+Cette extension fournit une interface utilisateur extensible pour exécuter vos tests dans VS Code. Elle peut être utilisée avec n'importe quel framework de test s'il existe une extension Test Adapter correspondante.
+
+- Test Adapter Converter ![Test Adapter Converter](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/test.adapter.PNG)
+<!-- note -->
+Cette extension convertit l'API de l'interface utilisateur de l'Explorateur de tests en tests natifs de Visual Studio Code. Vous pouvez l'utiliser en définissant testExplorer.useNativeTesting: true dans vos paramètres utilisateur.
+
+- SQLTools SQLite ![SQLTools SQLite](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/sqlite.PNG)
+<!-- note -->
+Ce package fait partie de l'extension vscode-sqltools.
+Consultez le guide de démarrage SQLite pour obtenir des instructions, y compris les prérequis.
+
+- Laravel Blade Snippets ![Laravel Blade Snippets](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Laravel.PNG)
+<!-- note -->
+Extensions de fragments de code et prise en charge de la mise en évidence de syntaxe pour les fichiers Blade de Laravel dans Visual Studio Code.
+  
+- Javascript(ES6) code snippers ![Javascript(ES6) code snippers](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/js.PNG)
+<!-- note -->
+Cette extension contient des extraits de code pour JavaScript en syntaxe ES6 pour l'éditeur Vs Code (prend en charge à la fois JavaScript et TypeScript).
+
+- PHP: Unit Test Explorer ![PHP: Unit Test Explorer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/phpunittest.PNG)
+<!-- note -->
+Exécutez vos tests PHP en utilisant l'interface utilisateur de l'Explorateur de tests.
+
+- PhP Debug ![PhP Debug](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/debug.PNG)
+<!-- note -->
+  Cette extension est un adaptateur de débogage entre VS Code et Xdebug par Derick Rethans. Xdebug est une extension PHP (un fichier .so sous Linux et un fichier .dll sous Windows) qui doit être installée sur votre serveur.
+  
 <!-- new slide -->
 
