@@ -6,6 +6,7 @@ presentation: GestionProjects
 order: 5
 ---
 # Analyse Techniques
+{:class="sectionHeader"}
 
 <!-- new slide -->
 
