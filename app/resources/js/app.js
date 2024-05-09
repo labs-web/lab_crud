@@ -51,3 +51,4 @@ $(document).ready(function () {
         window.history.replaceState({ path: url }, "", url + hash);
     }
 
+}
