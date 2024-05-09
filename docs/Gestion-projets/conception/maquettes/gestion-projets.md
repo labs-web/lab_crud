@@ -11,15 +11,16 @@ order: 7
 
 ### List des Projet
 
-![index](./images/list_des_projets.png){:width="1300px"}
+![index](/lab_crud/Gestion-projets/conception/maquettes/images/list_des_projets.png){:width="1300px"}
 _figure: List des Projet_
+
 
 <!-- new slide -->
 
 
 ### Ajouter un Projet
 
-![index](./images/ajouter_un_projet.png){:width="1300px"}
+![index](/lab_crud/Gestion-projets/conception/maquettes/images/ajouter_un_projet.png){:width="1300px"}
 _figure: Ajouter un Projet_
 
 <!-- new slide -->
@@ -27,7 +28,7 @@ _figure: Ajouter un Projet_
 
 ### Modifier un Projet
 
-![index](./images/modifier_le_projet.png){:width="1300px"}
+![index](/lab_crud/Gestion-projets/conception/maquettes/images/modifier_le_projet.png){:width="1300px"}
 _figure: Modifier le Projet_
 
 <!-- new slide -->
@@ -35,6 +36,6 @@ _figure: Modifier le Projet_
 
 ### Details de projet
 
-![index](./images/details_de_projet.png){:width="1300px"}
+![index](/lab_crud/Gestion-projets/conception/maquettes/images/details_de_projet.png){:width="1300px"}
 _figure: Details de Projet_
 <!-- new slide -->
