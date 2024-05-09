@@ -13,7 +13,7 @@ order: 4
 
 ## Capturer les besoins techniques
 
-Les package utilisé
+### Les package utilisé
 
 ![Les package utilisé](./images/1_n2YyXncCgoWgemC6xjZG4w.jpg){:width="900px"}*figure: Les package utilisé*
 
@@ -48,3 +48,8 @@ Les package utilisé
   - [Documentation : https://spatie.be/docs/laravel-permission/v6/installation-laravel](https://spatie.be/docs/laravel-permission/v6/installation-laravel)
   - **Commande:** *composer require spatie/laravel-permission*
   - **Version:** 6.0
+
+- Laravel Excel:
+  - [Documentation : https://docs.laravel-excel.com/3.1/getting-started/](https://docs.laravel-excel.com/3.1/getting-started/)
+  - **Commande:** *composer require maatwebsite/excel:^3.1*
+  - **Version:** 3.1
