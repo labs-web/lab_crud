@@ -16,25 +16,37 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * TODO : Migration par packages . Bootstrap any application services.
+     * Bootstrap any application services.
      */
     public function boot(): void
     {
-        // adapte mgration
-        $migrationsPath = database_path('migrations');
-        $paths = $this->getAllSubdirectoriesOptimized($migrationsPath);
-
-        $this->loadMigrationsFrom($paths);
+        // Migration by packages
+        $this->loadMigrationsFrom($this->getMigrationPaths());
+        
+        // Bootstrap any application services.
         Paginator::useBootstrap();
     }
 
     /**
-     * TODO : comments
+     * Get all migration paths.
+     *
+     * @return array
      */
-    function getAllSubdirectoriesOptimized($dir)
+    protected function getMigrationPaths(): array
+    {
+        $migrationsPath = database_path('migrations');
+        return $this->getAllSubdirectoriesOptimized($migrationsPath);
+    }
+
+    /**
+     * Get all subdirectories.
+     *
+     * @param string $dir
+     * @return array
+     */
+    protected function getAllSubdirectoriesOptimized(string $dir): array
     {
         $subdirectories = [];
-
         $items = scandir($dir);
 
         foreach ($items as $item) {
@@ -42,10 +54,7 @@ class AppServiceProvider extends ServiceProvider
                 $path = $dir . DIRECTORY_SEPARATOR . $item;
                 if (is_dir($path)) {
                     $subdirectories[] = $path;
-                    $subdirectoriesToAdd = $this->getAllSubdirectoriesOptimized($path);
-                    foreach ($subdirectoriesToAdd as $subdirToAdd) {
-                        $subdirectories[] = $subdirToAdd;
-                    }
+                    $subdirectories = array_merge($subdirectories, $this->getAllSubdirectoriesOptimized($path));
                 }
             }
         }
