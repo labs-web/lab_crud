@@ -6,8 +6,10 @@ package: GestionProjects
 presentationPackage: GestionProjects
 order: 2
 ---
-
-# Introduction
+# Rapport Gestion Projets
+{:class="sectionHeader"}
+<!-- new slide -->
+## Introduction
 ![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
