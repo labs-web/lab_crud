@@ -21,7 +21,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="nav-icon fas fa-table"></i>
-                                {{ __('GestionProjets/projet/message.addProject') }}
+                                {{ __('app.add') }} {{ __('GestionProjets/projet/message.titre') }}
                             </h3>
                         </div>
                         <!-- Obtenir le formulaire -->

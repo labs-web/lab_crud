@@ -1,7 +1,8 @@
 ---
 layout: default
-chapitre: Besoin
-presentation: Besoin
+package: GestionProjects
+presentationPackage: GestionProjects
+presentation: GestionProjects
 order: 3
 ---
 
@@ -49,3 +50,4 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 Passer un temps considérable à consulter et naviguer entre les différents projets en raison de la lenteur du téléchargement des données, causée par un volume important de données.
 
 <!-- new slide -->
+

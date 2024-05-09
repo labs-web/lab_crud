@@ -2,10 +2,13 @@
 layout: default
 chapitre: conclusion
 presentation: conclusion
+package: GestionProjects
+presentationPackage: GestionProjects
 order: 80
 
 ---
 # Conclusion
+{:class="sectionHeader"}
 
 ![Conclusion](./images/conclusion.png){:width="900px"}*figure: Conclusion*
 
@@ -19,4 +22,3 @@ En outre, nous avons rendu l'interface utilisateur multilingue afin de faciliter
 
 Cette étape marque une avancée significative dans la mise en place d'un outil fonctionnel et convivial pour la gestion de projets, offrant une base solide pour des développements futurs.
 
-<!-- new slide -->
