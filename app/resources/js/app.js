@@ -1,4 +1,9 @@
 import 'bootstrap';
+// Import AdminLTE
+import 'admin-lte/plugins/jquery/jquery';
+import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
+import 'admin-lte/dist/js/adminlte';
+
 
 // Import CKEditor
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
