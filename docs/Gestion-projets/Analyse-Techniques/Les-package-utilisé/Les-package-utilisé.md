@@ -51,6 +51,8 @@ order: 5
   - **Commande:** *composer require maatwebsite/excel:^3.1*
   - **Version:** 3.1
 
+<!-- new slide -->
+
 ### Gestion des exceptions 
 
 - Nous avons adopté une approche de gestion des exceptions afin de traiter les erreurs de manière efficace et efficiente.
