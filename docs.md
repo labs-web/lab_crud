@@ -3,10 +3,9 @@
 ## Branche fonctionnelle 
 
 
-
-
 ## Branche technique
 
+- Design paterne Repository
 
 ## Conception 
 
@@ -38,3 +37,8 @@
 - app/config/app.php
 - app/config/excel.php
 - app/config/permission.php
+
+
+### Data 
+- List des projets 
+E:\labs-web\lab_crud\app\database\data\projets.csv
