@@ -2,7 +2,7 @@
 layout: default
 chapitre: diagramme-classes
 presentation: diagramme-classes
-order: 6
+order:  7
 ---
 # Conception
 {:class="sectionHeader"}
