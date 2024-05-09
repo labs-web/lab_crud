@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
-<!-- TODO : Upload Ajax de façon global dans app.js -->
 <!-- TODO : Pagination en mide responsive web design -->
-
 
     <div class="content-header">
         @if (session('success'))
@@ -16,21 +13,16 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>
-                         @php
-                            title(__('app.list'), __('GestionProjets/projet/message.titre'), Config::get('app.locale') );
-                        @endphp
-                    </h1>
+                    <h1>{{ __('app.list') }} {{ __('GestionProjets/projet/message.titre') }}</h1>
                 </div>
-
-                <div class="col-sm-6">
-                    <div class="float-sm-right">
-                        <a href="{{ route('projets.create') }}" class="btn btn-info">
-                            <i class="fas fa-plus"></i>
-                            {{ __('app.add') }} {{ __('GestionProjets/projet/message.titre') }}
-                        </a>
+                    <div class="col-sm-6">
+                        <div class="float-sm-right">
+                            <a href="{{ route('projets.create') }}" class="btn btn-info">
+                                <i class="fas fa-plus"></i>
+                                {{ __('app.add') }} {{ __('GestionProjets/projet/message.titre') }}
+                            </a>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
