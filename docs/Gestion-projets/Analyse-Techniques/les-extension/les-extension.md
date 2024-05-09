@@ -43,8 +43,12 @@ order: 6
 - Git Graph ![Git Graph](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/Gitgraph.png)
 <!-- note -->
 Git Graph est une extension Git puissante et intuitive qui fournit une représentation visuelle interactive de la structure des branches de votre dépôt Git. Elle affiche un graphique de toutes les branches et de tous les commits de votre dépôt, vous permettant de voir comment ils sont liés et comment ils ont évolué au fil du temps.
-- Composer
-- Json
+- Composer ![Composer](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/composer1.png)
+<!-- note -->
+L'extension TODO Highlight contribue aux commandes, TODO-Highlight: List highlighted annotations et TODO-Highlight: Toggle highlight, que vous pouvez trouver dans la palette de commandes (Ctrl+Maj+P). La commande TODO-Highlight: Toggle highlight vous permet de désactiver ou d'activer rapidement le surlignage.
+- Json ![Json](/lab_crud/Gestion-projets/Analyse-Techniques/les-extension/images/json.png)
+<!-- note -->
+JSON est un format de données courant dans les fichiers de configuration tels que package.json ou project.json. Nous l'utilisons également largement dans Visual Studio Code pour nos fichiers de configuration. Lors de l'ouverture d'un fichier se terminant par .json, VS Code propose des fonctionnalités pour simplifier l'écriture ou la modification du contenu du fichier.
 - Luna Paint- Image Editor
 - Todo Tree
 - Test Explorer UI 
