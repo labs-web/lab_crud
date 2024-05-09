@@ -11,8 +11,10 @@
 function title($item, $obje, $lang = "fr") {
     if ($lang == "fr") {
         return $item . " " . "des" . " " . $obje;
-    } else {
+    } elseif($lang == "en") {
         return $obje . " " . $item;
+    } else {
+        return $item .  ' ' . $obje;
     }
 }
 ?>
