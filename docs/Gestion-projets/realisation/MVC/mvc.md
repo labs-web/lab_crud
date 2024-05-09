@@ -14,7 +14,7 @@ order:  18
 
 ## MVC
 
-![MVC](/lab_crud/Gestion-projets/realisation/MVC/images/mvc.png){:width="80%"}*figure: MVC*
+![MVC](/lab_crud/Gestion-projets/realisation/MVC/images/mvc.png){:width="50%"}*figure: MVC*
 
 
 
