@@ -2,12 +2,14 @@
 layout: default
 package: GestionProjects
 presentationPackage: GestionProjects
-categories: GestionDesProjects
-order: 32
+order: 7
 ---
-### Gestion des Projets
+ <!-- new slide -->
+# Maquttes
+ <!-- new slide -->
+## Gestion des Projets
 
-#### List des Projet
+### List des Projet
 
 ![index](./images/list_des_projets.png){:width="1300px"}
 _figure: List des Projet_
@@ -15,7 +17,7 @@ _figure: List des Projet_
 <!-- new slide -->
 
 
-#### Ajouter un Projet
+### Ajouter un Projet
 
 ![index](./images/ajouter_un_projet.png){:width="1300px"}
 _figure: Ajouter un Projet_
@@ -23,7 +25,7 @@ _figure: Ajouter un Projet_
 <!-- new slide -->
 
 
-#### Modifier un Projet
+### Modifier un Projet
 
 ![index](./images/modifier_le_projet.png){:width="1300px"}
 _figure: Modifier le Projet_
@@ -31,7 +33,7 @@ _figure: Modifier le Projet_
 <!-- new slide -->
 
 
-#### Details de projet
+### Details de projet
 
 ![index](./images/details_de_projet.png){:width="1300px"}
 _figure: Details de Projet_

@@ -2,18 +2,18 @@
 layout: default
 package: GestionProjects
 presentationPackage: GestionProjects
-categories: GestionDesProjects
-order: 52
+order: 4
 ---
 
 <!-- new slide -->
 
 # Analyse Techniques
 
-
 <!-- new slide -->
 
-## Les package utilisé
+## Capturer les besoins techniques
+
+Les package utilisé
 
 ![Les package utilisé](./images/1_n2YyXncCgoWgemC6xjZG4w.jpg){:width="900px"}*figure: Les package utilisé*
 
@@ -43,3 +43,8 @@ order: 52
   - [Documentation : https://laravel.com/docs/7.x/authentication](https://laravel.com/docs/7.x/authentication)
   - **Commande:** *composer require laravel/ui:^2.4*
   - **Version:** 2.4
+
+- Spatie:
+  - [Documentation : https://spatie.be/docs/laravel-permission/v6/installation-laravel](https://spatie.be/docs/laravel-permission/v6/installation-laravel)
+  - **Commande:** *composer require spatie/laravel-permission*
+  - **Version:** 6.0

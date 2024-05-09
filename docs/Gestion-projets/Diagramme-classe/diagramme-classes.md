@@ -2,7 +2,7 @@
 layout: default
 chapitre: diagramme-classes
 presentation: diagramme-classes
-order: 20
+order: 5
 ---
 # Base de données
 {:class="sectionHeader"}
