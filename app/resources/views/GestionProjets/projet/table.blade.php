@@ -3,8 +3,7 @@
         <thead>
             <tr>
                 <th>{{ __('GestionProjets/projet/message.title') }}</th>
-                <th>{{ __('GestionProjets/projet/message.startDate') }}</th>
-                <th>{{ __('GestionProjets/projet/message.endDate') }}</th>
+                <th>{{ __('GestionProjets/projet/message.description') }}</th>
                 <th class="text-center">{{ __('GestionProjets/projet/message.action') }}</th>
             </tr>
         </thead>
@@ -12,8 +11,8 @@
             @foreach ($projectData as $project)
                 <tr>
                     <td>{{ $project->nom }}</td>
-                    <td>{{ $project->date_debut }}</td>
-                    <td>{{ $project->date_de_fin }}</td>
+                    <td>{{ $project->description }}</td>
+                    
                     <td class="text-center">
                         @can('show-TaskController')
                             <a href="{{ route('task.show', $project->id) }}" class="btn btn-sm btn-secondary mx-2">
