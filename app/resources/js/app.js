@@ -1,14 +1,10 @@
-// Importation des dépendances Bootstrap et AdminLTE
-import "bootstrap";
-import "https://code.jquery.com/jquery-3.6.0.min.js";
-import "../../node_modules/admin-lte/dist/js/adminlte";
-import "admin-lte/plugins/jquery/jquery";
+import 'bootstrap';
 // Import jQuery
-import "jquery/dist/jquery";
+import 'jquery/dist/jquery';
 // Import AdminLTE
 import "admin-lte/dist/js/adminlte";
-import "admin-lte/plugins/bootstrap/js/bootstrap.bundle";
-import "admin-lte/dist/js/adminlte";
+import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
+import 'admin-lte/dist/js/adminlte';
 
 // Importation de CKEditor
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
@@ -27,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
+// TODO : comments , à trasmettre dans recherche.js
 $(document).ready(function () {
     // Fonction pour mettre à jour un paramètre dans l'URL
     function updateURLParameter(param, paramVal) {
@@ -49,73 +46,4 @@ $(document).ready(function () {
         window.history.replaceState({ path: url }, "", url + hash);
     }
 
-    // Fonction pour récupérer les données avec AJAX
-    function fetchData(page, searchValue) {
-        $.ajax({
-            url: "/projets/?page=" + page + "&searchValue=" + searchValue,
-            success: function (data) {
-                var newData = $(data);
-
-                $("tbody").html(newData.find("tbody").html());
-                $("#card-footer").html(newData.find("#card-footer").html());
-                var paginationHtml = newData.find(".pagination").html();
-                if (paginationHtml) {
-                    $(".pagination").html(paginationHtml);
-                } else {
-                    $(".pagination").html("");
-                }
-            },
-        });
-        if (page !== null && searchValue !== null) {
-            updateURLParameter("page", page);
-            updateURLParameter("searchValue", searchValue);
-        } else {
-            window.history.replaceState(
-                {},
-                document.title,
-                window.location.pathname
-            );
-        }
-    }
-
-    // Function to get URL parameter value by name
-    function getUrlParameter(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-        var results = regex.exec(location.search);
-        return results === null
-            ? ""
-            : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
-
-    var searchValueFromUrl = getUrlParameter("searchValue");
-    if (searchValueFromUrl) {
-        $("#table_search").val(searchValueFromUrl);
-        fetchData($("#page").val(), searchValueFromUrl);
-    }
-
-    // Gestion de l'événement de clic sur la pagination
-    $("body").on("click", ".pagination a", function (param) {
-        param.preventDefault();
-        var page = $(this).attr("href").split("page=")[1];
-        var searchValue = $("#table_search").val();
-        fetchData(page, searchValue);
-    });
-
-    // Gestion de l'événement de saisie dans la barre de recherche
-    $("body").on("keyup", "#table_search", function () {
-        var page = $("#page").val();
-        var searchValue = $(this).val();
-        fetchData(page, searchValue);
-    });
-
-    // Soumission du formulaire
-    function submitForm() {
-        document.getElementById("importForm").submit();
-    }
-
-    // Activation des dropdowns Bootstrap
-    $(document).ready(function () {
-        $(".dropdown-toggle").dropdown();
-    });
-});
+})
