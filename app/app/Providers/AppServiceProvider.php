@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap any application services.
+     * TODO : Migration par packages . Bootstrap any application services.
      */
     public function boot(): void
     {
@@ -28,6 +28,9 @@ class AppServiceProvider extends ServiceProvider
         Paginator::useBootstrap();
     }
 
+    /**
+     * TODO : comments
+     */
     function getAllSubdirectoriesOptimized($dir)
     {
         $subdirectories = [];
