@@ -8,6 +8,7 @@ order: 3
 <!-- new slide -->
 
 ## Diagramme de cas d'utilisation 
-![Pôle social ](/lab_crud/Gestion-projet/images/use-cas.png){: width="900px" }*Figure : Diagramme de cas d'utilisation detailer*
+![Pôle social ](/lab_crud/Gestion-projets/analyse fonctionnelle/images/use-cas.png){: width="900px" }*Figure : Diagramme de cas d'utilisation detailer*
+
 
 <!-- new slide -->
