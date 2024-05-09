@@ -15,6 +15,8 @@ order: 3
 ## Empathie avec chef de projet
 ![Empathie de chef de projet](/lab_crud/Gestion-projets/Besoin/images/empathyChef.PNG){:width="900px"}
 
+<!-- new slide -->
+
 ### Chef de projet
 
 Le chef de projet occupe une place essentielle dans le processus de réalisation des projets. Dans cette section, nous explorerons en détail sa méthode de gestion pour mener à bien ces projets.
