@@ -4,7 +4,7 @@ package: GestionProjects
 presentationPackage: GestionProjects
 order: 8
 ---
-### Maquettes
+## Maquettes
 
 #### List des Projet
 
