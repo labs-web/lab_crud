@@ -53,3 +53,6 @@ order: 5
   - [Documentation : https://docs.laravel-excel.com/3.1/getting-started/](https://docs.laravel-excel.com/3.1/getting-started/)
   - **Commande:** *composer require maatwebsite/excel:^3.1*
   - **Version:** 3.1
+
+- Gestion des exceptions 
+-  
