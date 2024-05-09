@@ -5,7 +5,7 @@ presentation: diagramme-classes
 order:  8
 ---
 # Conception
-{:class="sectionHeader"}
+
 
 <!-- new slide -->
 
