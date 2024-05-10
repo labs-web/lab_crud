@@ -12,7 +12,7 @@ order:  8
 
 ## Diagramme de classes globale
 
-![Diagramme de classes globale](/lab_crud/conception/Diagramme-classe/Images/diagramme-classe-globale.png){:width="70%"}*figure: diagramme de classe globale*
+![Diagramme de classes globale](/lab_crud/conception/Diagramme-classe/Images/diagramme-classe-globale.PNG){:width="70%"}*figure: diagramme de classe globale*
 
 <!-- new slide -->
 
@@ -24,6 +24,6 @@ order:  8
 
 ## Diagramme de classe de projets
 
-![Diagramme de classe de projets](/lab_crud/conception/Diagramme-classe/Images/diagramme-classe-projet.png){:width="70%"}*figure: diagramme de classe de projets*
+![Diagramme de classe de projets](/lab_crud/conception/Diagramme-classe/Images/diagramme-classe-projet.PNG){:width="70%"}*figure: diagramme de classe de projets*
 
 <!-- new slide -->
