@@ -51,7 +51,7 @@ class ProjetController extends AppBaseController
         try {
             $validatedData = $request->validated();
             $this->projectRepository->create($validatedData);
-            return redirect()->route('projets.index')->with('success', 'Le projet a été ajouté avec succès.');
+            return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.addSucées'));
 
         } catch (ProjectAlreadyExistException $e) {
             return back()->withInput()->withErrors(['project_exists' => __('GestionProjets/projet/message.createProjectException')]);
@@ -82,15 +82,14 @@ class ProjetController extends AppBaseController
     {
         $validatedData = $request->validated();
         $this->projectRepository->update($id, $validatedData);
-        return redirect()->route('projets.index', $id)->with('success', 'Le projet a été modifier avec succès.');
+        return redirect()->route('projets.index', $id)->with('success',__('GestionProjets/projet.singular').' '.__('app.updateSucées'));
     }
 
 
     public function destroy(string $id)
     {
         $this->projectRepository->destroy($id);
-        $projectData = $this->projectRepository->paginate();
-        return view('GestionProjets.projet.index', compact('projectData'))->with('succes', 'Le projet a été supprimer avec succés.');
+        return redirect()->route('projets.index')->with('success', 'Le projet a été supprimer avec succés.');
     }
 
 
@@ -113,6 +112,6 @@ class ProjetController extends AppBaseController
         } catch (\InvalidArgumentException $e) {
             return redirect()->route('projets.index')->withError('Le symbole de séparation est introuvable. Pas assez de données disponibles pour satisfaire au format.');
         }
-        return redirect()->route('projets.index')->with('success', 'Projet a ajouté avec succès');
+        return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.addSucées'));
     }
 }

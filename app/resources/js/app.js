@@ -5,6 +5,7 @@ import 'jquery/dist/jquery';
 import "admin-lte/dist/js/adminlte";
 import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
 import 'admin-lte/dist/js/adminlte';
+import './app.recherche';
 
 // Importation de CKEditor
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
@@ -23,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
-// TODO : comments , à trasmettre dans recherche.js
 $(document).ready(function () {
     // Fonction pour mettre à jour un paramètre dans l'URL
     function updateURLParameter(param, paramVal) {

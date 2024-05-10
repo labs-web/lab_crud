@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', __('app.add') . ' ' . __('GestionProjets/projet.singular'))
 @section('content')
     <div class="content-header">
         @if ($errors->has('project_exists'))
@@ -21,7 +22,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="nav-icon fas fa-table"></i>
-                                {{ __('app.add') }} {{ __('GestionProjets/projet/message.titre') }}
+                                {{ __('app.add') }} {{ __('GestionProjets/projet.singular') }}
                             </h3>
                         </div>
                         <!-- Obtenir le formulaire -->

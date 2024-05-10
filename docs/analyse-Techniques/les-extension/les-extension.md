@@ -7,7 +7,7 @@ order: 6
 ---
 ### Extension de vs code
 
-![Prettier](/{{site.baseurl}}/Analyse-Techniques/les-extension/images/3extensions.png)
+![Prettier](/lab_crud/Analyse-Techniques/les-extension/images/3extensions.png)
   
 {:class="hiddenPresentation"}
 <!-- note -->
@@ -18,7 +18,7 @@ order: 6
 
 - Cette extension recherche rapidement (en utilisant ripgrep) votre espace de travail pour les balises de commentaires telles que TODO et FIXME, et les affiche dans une vue arborescente dans la barre d'activités. Cette vue peut être tirée de la barre d'activités vers le volet de l'explorateur (ou n'importe où ailleurs où vous préférez qu'elle soit).
 
-  ![Json](/{{site.baseurl}}/Analyse-Techniques/les-extension/images/33Extensions.png)
+  ![Json](/lab_crud/Analyse-Techniques/les-extension/images/33Extensions.png)
 
      - JSON est un format de données courant dans les fichiers de configuration tels que package.json ou project.json. Nous l'utilisons également largement dans Visual Studio Code pour nos fichiers de configuration. Lors de l'ouverture d'un fichier se terminant par .json, VS Code propose des fonctionnalités pour simplifier l'écriture ou la modification du contenu du fichier.
 
@@ -29,7 +29,7 @@ order: 6
 
   
  
-   ![NPM Intellisence](/{{site.baseurl}}/Analyse-Techniques/les-extension/images/4extensions.png)
+   ![NPM Intellisence](/lab_crud/Analyse-Techniques/les-extension/images/4extensions.png)
     
 
     - npm Intellisense vous permet de gagner du temps et de l’énergie en fournissant une auto-complétion intelligente pour les importations de paquets npm. Il suggère des noms de paquets au fur et à mesure que vous les saisissez, ce qui facilite l’importation de dépendances dans votre projet.

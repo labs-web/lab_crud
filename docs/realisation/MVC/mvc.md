@@ -14,7 +14,7 @@ order:  18
 
 ## MVC
 
-![MVC](/{{site.baseurl}}/realisation/MVC/images/mvc.png){:width="48%"}*figure: MVC*
+![MVC](/lab_crud/realisation/MVC/images/mvc.png){:width="48%"}*figure: MVC*
 
 
 

@@ -197,7 +197,7 @@ h5 {
 
 /* Table de matière */
 
-#table-de-matière+ul li a {
+#table-de-matiere+ul li a {
 	font-weight: bold;
 	display: block;
 	padding: 5px 10px;
@@ -207,11 +207,11 @@ h5 {
 	transition: background-color 0.3s, color 0.3s;
 }
 
-#table-de-matière+ul {
+#table-de-matiere+ul {
 	list-style-type: none;
 }
 
-#table-de-matière+ul li a:hover {
+#table-de-matiere+ul li a:hover {
 	color: #777;
 	/* Change text color on hover */
 }
