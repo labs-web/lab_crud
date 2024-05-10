@@ -19,7 +19,6 @@ Installez PHP en utilisant Homebrew
     brew install php
 ```
 
-
 For Linux (Ubuntu):
 ```bash
 sudo apt update
@@ -60,11 +59,11 @@ cd app
 
 ```bash
 composer install
+npm install
 ```
 
-<!-- TODO : nom install ? -->
 
-4. Créer un fichier .env en copiant .env.example :
+1. Créer un fichier .env en copiant .env.example :
    
 ```bash
 cp .env.example .env
