@@ -1,17 +1,20 @@
 <?php
 
-namespace Database\Seeders\GestionProjets;
+namespace Database\Seeders\GestionTasks;
 
-
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\GestionProjets\Projet;
+use App\Models\GestionTasks\Task;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use Illuminate\Support\Facades\Schema;
+use Psy\Readline\Hoa\Console;
 
 
-class ProjetsSeeder extends Seeder
+
+class TasksSeeder extends Seeder
 {
     public function run(): void
     {
@@ -19,19 +22,19 @@ class ProjetsSeeder extends Seeder
         $MembreRole = User::MEMBRE;
 
         Schema::disableForeignKeyConstraints();
-        Projet::truncate();
+        Task::truncate();
         Schema::enableForeignKeyConstraints();
 
         // TODO : Organisation de code , espaces 
         // get data from csv file
-        $csvFile = fopen(base_path("database/data/projets.csv"), "r");
+        $csvFile = fopen(base_path("database/data/tasks.csv"), "r");
         $firstline = true;
         $i = 0;
         while (($data = fgetcsv($csvFile)) !== FALSE) {
 
 
             if (!$firstline) {
-                Projet::create([
+                Task::create([
                     "nom"=>$data['0'],
                     "description" =>$data['1']
                 ]);
@@ -42,25 +45,25 @@ class ProjetsSeeder extends Seeder
         fclose($csvFile);
         $actions = ['index', 'show', 'create', 'store', 'edit', 'update', 'destroy', 'export', 'import'];
         foreach ($actions as $action) {
-            $permissionName = $action . '-' . "ProjetController";
+            $permissionName = $action . '-' . "TaskController";
             Permission::create(['name' => $permissionName, 'guard_name' => 'web']);
         }
 
         $projectManagerRolePermissions = [
-            'index-ProjetController',
-            'show-ProjetController',
-            'create-ProjetController',
-            'store-ProjetController',
-            'edit-ProjetController',
-            'update-ProjetController',
-            'destroy-ProjetController',
-            'export-ProjetController',
-            'import-ProjetController'
+            'index-TaskController',
+            'show-TaskController',
+            'create-TaskController',
+            'store-TaskController',
+            'edit-TaskController',
+            'update-TaskController',
+            'destroy-TaskController',
+            'export-TaskController',
+            'import-TaskController'
         ];
 
         $projectMembreRolePermissions = [
-            'index-ProjetController',
-            'show-ProjetController',
+            'index-TaskController',
+            'show-TaskController',
         ];
 
         $admin = Role::where('name', $AdminRole)->first();
