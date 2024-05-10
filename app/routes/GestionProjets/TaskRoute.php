@@ -8,7 +8,7 @@ use App\Http\Controllers\GestionTasks\TaskController;
 Route::middleware('auth')->group(function () {
     Route::prefix('/')->group(function () {
         Route::resource('tasks', TaskController::class);
-        Route::get('export', [TaskController::class, 'export'])->name('tasks.export');
-        Route::post('import', [TaskController::class, 'import'])->name('tasks.import');
+        Route::get('tasks/export', [TaskController::class, 'export'])->name('tasks.export');
+        Route::post('tasks/import', [TaskController::class, 'import'])->name('tasks.import');
     });
 });
