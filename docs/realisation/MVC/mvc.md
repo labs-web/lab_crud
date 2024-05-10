@@ -14,11 +14,9 @@ order:  18
 
 ## MVC
 
+Le Modèle-Vue-Contrôleur (MVC) est un schéma architectural qui sépare une application en trois composants principaux : le modèle, la vue et le contrôleur. Chaque composant répond à des aspects spécifiques du développement. Très utilisé en développement web, le MVC permet de concevoir des projets évolutifs.
+
 ![MVC](/lab_crud/realisation/MVC/images/mvc.png){:width="48%"}*figure: MVC*
-
-
-
-
 
 <!-- note -->
 
