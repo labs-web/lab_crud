@@ -6,10 +6,18 @@ package: GestionProjects
 presentationPackage: GestionProjects
 order: 2
 ---
-# Rapport Gestion Projets
+
+
+# Rapport : lab crud
 {:class="sectionHeader"}
+
 <!-- new slide -->
+
 ## Introduction
+
+![Empathie de chef de projet](/{{site.baseurl}}/besoin/images/empathyChef.PNG){:width="900px"}
+
+
 ![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->

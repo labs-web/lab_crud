@@ -59,7 +59,8 @@ php artisan db:seed
 php artisan serve
 ```
 
-- Compiler les assets avec npm :
+- Compiler les assets avec npm : après la modification des scripts 
+
 
 ```bash
 npm run build

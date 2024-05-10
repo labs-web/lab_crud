@@ -15,7 +15,7 @@ order: 5
 
 ### Les package utilisé
 
-![Les package utilisé](/lab_crud/Gestion-projets/Analyse-Techniques/Les-package-utilisé/images/1_n2YyXncCgoWgemC6xjZG4w.jpg){:width="900px"}*figure: Les package utilisé*
+![Les package utilisé](/{{site.baseurl}}/Analyse-Techniques/Les-package-utilisé/images/1_n2YyXncCgoWgemC6xjZG4w.jpg){:width="900px"}*figure: Les package utilisé*
 
 <!-- note -->
 
@@ -58,7 +58,7 @@ order: 5
 
 ## Gestion des exceptions 
 
-![Gestion des exceptions](/lab_crud/Gestion-projets/Analyse-Techniques/Les-package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
+![Gestion des exceptions](/{{site.baseurl}}/Analyse-Techniques/Les-package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
 
 <!-- note -->
 - Nous avons adopté une approche de gestion des exceptions afin de traiter les erreurs de manière efficace et efficiente.
