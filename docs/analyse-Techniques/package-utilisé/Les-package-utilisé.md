@@ -13,52 +13,45 @@ order: 5
 
 ## Capturer les besoins techniques
 
-### Les package utilisé
+### Les package à utiliser
 
-![Les package utilisé](/{{site.baseurl}}/Analyse-Techniques/Les-package-utilisé/images/1_n2YyXncCgoWgemC6xjZG4w.jpg){:width="900px"}*figure: Les package utilisé*
+![Les package utilisé](/lab_crud/Analyse-Techniques/package-utilisé/images/package.jpg){:width="900px"}*figure: Les package utilisé*
 
 <!-- note -->
 
 - Font Awsome Icons:
-  - [Documentation : https://www.npmjs.com/package/@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
-  - **Commande:** *npm i @fortawesome/fontawesome-free*
+  - [Documentation : https://github.com/FortAwesome/Font-Awesome#documentation](https://github.com/FortAwesome/Font-Awesome#documentation)
   - **Version:** 6.5.2
 
-- Rich Text Editor:
+- Rich Text Editor ckeditor5:
   - [Documentation : https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)
-  - **Commande:** *npm i @ckeditor/ckeditor5-build-classic*
   - **Version:** 41.3.1
 
 - jQuery:
   - [Documentation : https://www.npmjs.com/package/jquery](https://www.npmjs.com/package/jquery)
-  - **Commande:** *npm i jquery*
   - **Version:** 3.7.1
 
 - AdminLTE:
   - [Documentation : https://www.npmjs.com/package/admin-lte](https://www.npmjs.com/package/admin-lte)
-  - **Commande:** *npm install admin-lte@^3.1 --save*
   - **Version:** 3.1
 
 - Laravel UI:
   - [Documentation : https://laravel.com/docs/7.x/authentication](https://laravel.com/docs/7.x/authentication)
-  - **Commande:** *composer require laravel/ui:^2.4*
   - **Version:** 2.4
 
 - Spatie:
   - [Documentation : https://spatie.be/docs/laravel-permission/v6/installation-laravel](https://spatie.be/docs/laravel-permission/v6/installation-laravel)
-  - **Commande:** *composer require spatie/laravel-permission*
   - **Version:** 6.0
 
 - Laravel Excel:
   - [Documentation : https://docs.laravel-excel.com/3.1/getting-started/](https://docs.laravel-excel.com/3.1/getting-started/)
-  - **Commande:** *composer require maatwebsite/excel:^3.1*
   - **Version:** 3.1
 
 <!-- new slide -->
 
 ## Gestion des exceptions 
 
-![Gestion des exceptions](/{{site.baseurl}}/Analyse-Techniques/Les-package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
+![Gestion des exceptions](/lab_crud/Analyse-Techniques/Les-package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
 
 <!-- note -->
 - Nous avons adopté une approche de gestion des exceptions afin de traiter les erreurs de manière efficace et efficiente.
