@@ -9,30 +9,28 @@ order: 4
 # Analyse fonctionnelle
 {:class="sectionHeader"}
 
+L'analyse fonctionnelle vise la capture des besoins fonctionnels et l'analyse des spécifications fonctionnelles de manière à déterminer ce que va réaliser le système en terme de métier. C'est ici, qu'on identifie et dégage toutes les fonctionnalités du système à réaliser.
+
 <!-- new slide -->
 ## Idéation
 
 
-<!-- TODO : introduction -->
+Après avoir analysé les besoins du client, une solution émerge sous la forme d'une application web dédiée à la gestion optimisée des projets. Cette solution propose des fonctionnalités avancées visant à simplifier la planification, le suivi et la collaboration.
+{:class="introduction"}
 
-![Ideation](/lab_crud/analyse-fonctionnelle/images/ideation.jpg){:width="1000px"}
-*figure: ideation*
+![Ideation]({{site.baseurl}}/analyse-fonctionnelle/images/ideation.jpg){:width="1000px"}
+*figure: Ideation*
 
-<!-- note -->
-Créez une application web qui permettra:
-
--  gestion des projets
--  
-<!-- TODO : ajouter les autres fonctionnalité : pour membre et projet -->
   
 
 <!-- new slide -->
 ## Diagramme de cas d'utilisation 
 
-<!-- TODO : Introduction  -->
+L'utilisation du diagramme de cas d'utilisation simplifie la clarification et l'organisation des besoins en offrant une représentation visuelle des interactions entre les utilisateurs et le système. Cette approche facilite la conception d'une solution logicielle répondant de manière précise et efficace aux besoins identifiés.
+{:class="introduction"}
 
-![Pôle social ](/lab_crud/analyse-fonctionnelle/images/use-cas.png){: width="900px" }*Figure : Diagramme de cas d'utilisation detailer*
 
-<!-- TODO : Ajouter les autres utilisateurs -->
+![Cas d'utilisation]({{site.baseurl}}/analyse-fonctionnelle/images/use-case.png){: width="900px" }*Figure : Cas d'utilisation détaillé*
+
 
 <!-- new slide -->
