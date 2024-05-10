@@ -9,6 +9,8 @@ order: 4
 # Analyse fonctionnelle
 {:class="sectionHeader"}
 
+<!-- note -->
+
 L'analyse fonctionnelle vise la capture des besoins fonctionnels et l'analyse des spécifications fonctionnelles de manière à déterminer ce que va réaliser le système en terme de métier. C'est ici, qu'on identifie et dégage toutes les fonctionnalités du système à réaliser.
 
 <!-- new slide -->
