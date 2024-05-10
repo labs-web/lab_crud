@@ -9,11 +9,15 @@ use Tests\DuskTestCase;
 class BaseDuskTest extends DuskTestCase
 {
 
+    protected static $migrationRun = false;
 
     protected function setUp(): void{
         parent::setUp();
-        $this->artisan('migrate:fresh');
-        $this->artisan('db:seed', ['--class' => 'DatabaseSeeder']);
+        if (!static::$migrationRun) {
+            $this->artisan('migrate:fresh');
+            $this->artisan('db:seed', ['--class' => 'DatabaseSeeder']);
+            static::$migrationRun = true;
+        }
     }
 
 
