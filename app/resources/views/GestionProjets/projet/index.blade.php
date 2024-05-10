@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', __('GestionProjets/projet.singular'))
 
 @section('content')
     <div class="content-header">
