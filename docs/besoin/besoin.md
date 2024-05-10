@@ -19,9 +19,9 @@ Le chef de projet occupe une place essentielle dans le processus de réalisation
 ### Carte d'empathie
 
 
-![Empathie de chef de projet](/lab_crud/besoin/images/empathyChef.PNG){:width="900px"}
+![Empathie de chef de projet](/lab_crud/besoin/images/empathyChef.PNG){:width="900px"}*Figure:Empathie de chef de projet*
 
-<!-- TODO : nom de figure -->
+
 
 
 <!-- note -->
