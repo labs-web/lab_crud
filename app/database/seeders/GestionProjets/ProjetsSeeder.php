@@ -2,16 +2,13 @@
 
 namespace Database\Seeders\GestionProjets;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
 use App\Models\GestionProjets\Projet;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
-use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use Illuminate\Support\Facades\Schema;
-use Psy\Readline\Hoa\Console;
-
 
 
 class ProjetsSeeder extends Seeder

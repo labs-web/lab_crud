@@ -3,7 +3,8 @@
 
 ## Installation de PHP
 
-<!-- TODO : version de PHP -->
+
+PHP 8.2.11 (cli) (construit le 1er octobre 2021 à 15h00) ou une version plus récente est requise.
 
 ## Guide de Démarrage pour Lab CRUD
 
@@ -17,9 +18,9 @@ cd app
 
 ```bash
 composer install
+npm install
 ```
 
-<!-- TODO : nom install ? -->
 
 4. Créer un fichier .env en copiant .env.example :
    
@@ -59,7 +60,8 @@ php artisan db:seed
 php artisan serve
 ```
 
-- Compiler les assets avec npm :
+- Compiler les assets avec npm : après la modification des scripts 
+
 
 ```bash
 npm run build

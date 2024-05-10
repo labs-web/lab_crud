@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- TODO : Pagination en mide responsive web design -->
-
     <div class="content-header">
         @if (session('success'))
             <div class="alert alert-success alert-dismissible">
@@ -13,16 +11,28 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>{{ __('app.list') }} {{ __('GestionProjets/projet/message.titre') }}</h1>
+                    <h1>
+                        @php
+                            // Generate the title using the title function
+                            use App\helpers\TranslationHelper;
+                            $lang = Config::get('app.locale');
+                            $translatedName = TranslationHelper::getTitle(__('GestionProjets/projet.singular'), $lang);
+                            echo $translatedName;
+
+                        @endphp
+                    </h1>
                 </div>
-                    <div class="col-sm-6">
-                        <div class="float-sm-right">
+
+                <div class="col-sm-6">
+                    <div class="float-sm-right">
+                        @can('create-ProjetController')
                             <a href="{{ route('projets.create') }}" class="btn btn-info">
                                 <i class="fas fa-plus"></i>
-                                {{ __('app.add') }} {{ __('GestionProjets/projet/message.titre') }}
+                                {{ __('app.add') }} {{ __('GestionProjets/projet.singular') }}
                             </a>
-                        </div>
+                        @endcan
                     </div>
+                </div>
             </div>
         </div>
     </div>
@@ -53,5 +63,3 @@
         <input type="hidden" id='page' value="1">
     </section>
 @endsection
-
-

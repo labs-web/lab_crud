@@ -2,11 +2,20 @@
 layout: default
 chapitre: introduction
 presentation: introduction
+package: GestionProjects
+presentationPackage: GestionProjects
 order: 2
 ---
 
-# Introduction
-![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
+# Rapport : lab crud
+{:class="sectionHeader"}
+
+<!-- new slide -->
+
+## Introduction
+
+
+![Introduction](/lab_crud/introduction/images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
 

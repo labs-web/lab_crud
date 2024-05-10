@@ -10,6 +10,7 @@
    [Documentation AdminLTE 3.2](https://adminlte.io/docs/3.2/)
    ```
 
+
 2. **Laravel/ui**
    - Installation du package 
    ```php
@@ -95,4 +96,13 @@
       - Livrable :
    ```bash
    [Documentation jquery](https://www.npmjs.com/package/jquery)
+   ```
+8. **Font Awsome Icons**
+   - Installation du package 
+   ```php
+   npm i @fortawesome/fontawesome-free
+   ```
+      - Livrable :
+   ```bash
+   [Documentation Font Awsome Icons](https://github.com/FortAwesome/Font-Awesome#documentation)
    ```
