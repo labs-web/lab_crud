@@ -25,7 +25,7 @@ class ProjetTest extends BaseDuskTest
             $browser->press('Ajouter');
             $browser->waitForLocation('/projets');
             $browser->assertPathIs('/projets');
-            $browser->assertSee('Le projet a été ajouté avec succès.');
+            $browser->assertSee('Projet a été ajouté avec succès.');
         });
     }
 
@@ -51,7 +51,7 @@ class ProjetTest extends BaseDuskTest
         $this->browse(function (Browser $browser) {
             $this->SearchProject('nom test');
             $browser->click('.btn.btn-default.btn-sm i.far.fa-eye');
-            $browser->assertSee('Detail');
+            $browser->assertSee('Détail');
         });
     }
 
@@ -68,7 +68,7 @@ class ProjetTest extends BaseDuskTest
             $browser->press('Modifier');
             $browser->waitForLocation('/projets');
             $browser->assertPathIs('/projets');
-            $browser->assertSee('Le projet a été modifier avec succès.');
+            $browser->assertSee('Projet a été mis à jour avec succès.');
         });
     }
 
