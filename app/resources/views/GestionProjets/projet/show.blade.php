@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', __('app.show') . ' ' . __('GestionProjets/projet.singular'))
 @section('content')
     <div class="content-header">
         <div class="container-fluid">
