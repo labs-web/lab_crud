@@ -10,7 +10,7 @@ order:  7
 ## Desing pattern
 
 
-![Desing pattern](/{{site.baseurl}}/Analyse-Techniques/Desing-pattern/images/Desing-pattern.jpg){:width="60%"}*figure: Desing pattern*
+![Desing pattern](/lab_crud/Analyse-Techniques/Desing-pattern/images/Desing-pattern.jpg){:width="60%"}*figure: Desing pattern*
 
 
 
