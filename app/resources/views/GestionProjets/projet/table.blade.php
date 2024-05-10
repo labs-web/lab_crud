@@ -2,7 +2,7 @@
     <table class="table table-striped text-nowrap">
         <thead>
             <tr>
-                <th>{{ __('GestionProjets/projet/message.titre') }}</th>
+                <th>{{ __('GestionProjets/projet.singular') }}</th>
                 <th>{{ __('app.description') }}</th>
                 <th class="text-center">{{ __('app.action') }}</th>
             </tr>

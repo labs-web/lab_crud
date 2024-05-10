@@ -12,9 +12,13 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1>
-                         @php
-                            // Generate the title using the title function
-                            echo title(__('app.list'), __('GestionProjets/projet/message.titre'), Config::get('app.locale'));
+                        @php
+                        // Generate the title using the title function
+                            use App\helpers\TranslationHelper;
+                            $lang = Config::get('app.locale');
+                            $translatedName = TranslationHelper::getTitle(__('GestionProjets/projet.singular'), $lang);
+                            echo $translatedName;
+
                         @endphp
                     </h1>
                 </div>
@@ -23,7 +27,7 @@
                     <div class="float-sm-right">
                         <a href="{{ route('projets.create') }}" class="btn btn-info">
                             <i class="fas fa-plus"></i>
-                            {{ __('app.add') }} {{ __('GestionProjets/projet/message.titre') }}
+                            {{ __('app.add') }} {{ __('GestionProjets/projet.singular') }}
                         </a>
                     </div>
                 </div>
