@@ -10,17 +10,23 @@ order: 3
 
 <!-- new slide -->
 
-## Empathie avec chef de projet
-![Empathie de chef de projet](/{{site.baseurl}}/besoin/images/empathyChef.PNG){:width="900px"}
+## Utilisateur : Chef de projet 
 
-<!-- note -->
-
-
-### Chef de projet
+### Définition
 
 Le chef de projet occupe une place essentielle dans le processus de réalisation des projets. Dans cette section, nous explorerons en détail sa méthode de gestion pour mener à bien ces projets.
 
-### Empathie : Chef de projet
+### Carte d'empathie
+
+
+![Empathie de chef de projet](lab_crud/besoin/images/empathyChef.PNG){:width="900px"}
+
+<!-- TODO : nom de figure -->
+
+
+<!-- note -->
+
+### Compte rendu de l'entretien
 
 Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur web en solicode
 
@@ -41,9 +47,10 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 
 <!-- new slide -->
 
+
 ## Définir le problème
 
-![Définir le problem](/{{site.baseurl}}/besoin/images/problem.jpg){:width="700px"}
+![Définir le problem](/lab_crud/besoin/images/problem.jpg){:width="700px"}
 *figure: définir le problème*
 
 <!-- note -->
