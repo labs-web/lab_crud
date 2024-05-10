@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
-// TODO : comments , à trasmettre dans recherche.js
 $(document).ready(function () {
     // Fonction pour mettre à jour un paramètre dans l'URL
     function updateURLParameter(param, paramVal) {

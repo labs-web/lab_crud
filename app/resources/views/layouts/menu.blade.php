@@ -8,13 +8,6 @@
         </p>
     </a>
 </li>
-<li class="nav-item">
-    <a href="{{ route('projets.index') }}"
-        class="nav-link {{ Request::is('projets*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-table"></i>
-        <p>
-            Projets
-        </p>
-    </a>
-</li>
+
+@include('layouts.GestionProjets.GestionProjetsMenu')
 {{-- @endcan --}}
