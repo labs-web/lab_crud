@@ -4,8 +4,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/lab_crud/assets/css/rapport.css">
-    <link rel="stylesheet" href="/lab_crud/assets/css/customRapport.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/rapport.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/customRapport.css">
     <title> Rapport </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -13,15 +13,17 @@
 <body>
     <div class="book">
         <a id="presentation-icon" href="#" target="_blank">
-            <img src="/lab_crud/images/entreprise.png" width="80px" height="80px" />
+            <img src="{{ site.baseurl }}/images/entreprise.png" width="80px" height="80px" />
         </a>
         <div class="page">
             {{ content }}
         </div>
     </div>
 </body>
-<script src="/lab_crud/assets/js/tableDeMatière.js"></script>
+
+<script src="{{ site.baseurl }}/assets/js/tableDeMatiere.app.js"></script>
 <script src="/lab_crud/assets/js/linkModifier.js"></script>
+
 <script>
     // Ajouter un séparateur des pages avant chaque élément h1
     // utilisation hr comme séparateur des pages
