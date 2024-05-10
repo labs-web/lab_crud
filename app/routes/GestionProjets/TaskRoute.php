@@ -3,8 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GestionTasks\TaskController;
 
-// TODO : Commentaire : routage par Model
-
+// routes for tasks management
 Route::middleware('auth')->group(function () {
     Route::prefix('/')->group(function () {
         Route::resource('tasks', TaskController::class);
