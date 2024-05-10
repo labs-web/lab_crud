@@ -13,7 +13,7 @@
                 <div class="col-sm-6">
                     <h1>
                         @php
-                        // Generate the title using the title function
+                            // Generate the title using the title function
                             use App\helpers\TranslationHelper;
                             $lang = Config::get('app.locale');
                             $translatedName = TranslationHelper::getTitle(__('GestionProjets/projet.singular'), $lang);
@@ -25,10 +25,12 @@
 
                 <div class="col-sm-6">
                     <div class="float-sm-right">
-                        <a href="{{ route('projets.create') }}" class="btn btn-info">
-                            <i class="fas fa-plus"></i>
-                            {{ __('app.add') }} {{ __('GestionProjets/projet.singular') }}
-                        </a>
+                        @can('create-ProjetController')
+                            <a href="{{ route('projets.create') }}" class="btn btn-info">
+                                <i class="fas fa-plus"></i>
+                                {{ __('app.add') }} {{ __('GestionProjets/projet.singular') }}
+                            </a>
+                        @endcan
                     </div>
                 </div>
             </div>
