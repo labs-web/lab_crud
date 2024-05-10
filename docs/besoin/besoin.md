@@ -11,7 +11,7 @@ order: 3
 <!-- new slide -->
 
 ## Empathie avec chef de projet
-![Empathie de chef de projet](/lab_crud/Gestion-projets/Besoin/images/empathyChef.PNG){:width="900px"}
+![Empathie de chef de projet](/lab_crud/besoin/images/empathyChef.PNG){:width="900px"}
 
 <!-- note -->
 
@@ -43,7 +43,7 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 
 ## Définir le problème
 
-![Définir le problem](/lab_crud/Gestion-projets/Besoin/images/problem.jpg){:width="700px"}
+![Définir le problem](/lab_crud/besoin/images/problem.jpg){:width="700px"}
 *figure: définir le problème*
 
 <!-- note -->
