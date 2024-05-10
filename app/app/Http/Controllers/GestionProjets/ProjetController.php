@@ -82,15 +82,14 @@ class ProjetController extends AppBaseController
     {
         $validatedData = $request->validated();
         $this->projectRepository->update($id, $validatedData);
-        return redirect()->route('projet.index')->with('success', 'Le projet a été modifier avec succès.');
+        return redirect()->route('projets.index')->with('success', 'Le projet a été modifier avec succès.');
     }
 
 
     public function destroy(string $id)
     {
         $this->projectRepository->destroy($id);
-        $projectData = $this->projectRepository->paginate();
-        return view('GestionProjets.projet.index', compact('projectData'))->with('success', 'Le projet a été supprimer avec succés.');
+        return redirect()->route('projets.index')->with('success', 'Le projet a été supprimer avec succés.');
     }
 
 
