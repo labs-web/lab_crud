@@ -5,48 +5,7 @@
 
 
 PHP 8.2.11 (cli) (construit le 1er octobre 2021 à 15h00) ou une version plus récente est requise.
-**For Windows:**
-Téléchargez PHP depuis le site officiel : https://windows.php.net/download/
-Extrayez le fichier ZIP téléchargé dans un répertoire de votre choix (par exemple, C:\php)
-Ajoutez le répertoire PHP à la variable d'environnement PATH de votre système
 
-**For macOS:**
-Installez Homebrew (si ce n'est pas déjà fait)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-Installez PHP en utilisant Homebrew
-```bash
-    brew install php
-```
-
-For Linux (Ubuntu):
-```bash
-sudo apt update
-sudo apt install php
-```
-
-## Installation de Composer
-**Pour Windows:**
-
-Téléchargez et exécutez l'installateur Composer à partir de: https://getcomposer.org/download/
-Suivez les instructions de l'assistant d'installation
-
-**Pour macOS et Linux:**
-
-Exécutez la commande suivante dans votre terminal
-```bash
-    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-    php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-    php -r "unlink('composer-setup.php');"
-```
-
-
-Vérifiez les installations de PHP et Composer
-
-```bash
-    php --version
-    composer --version
-```
 ## Guide de Démarrage pour Lab CRUD
 
 1. Ouvrez votre terminal.
