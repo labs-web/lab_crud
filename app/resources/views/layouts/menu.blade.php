@@ -2,7 +2,7 @@
     <a href="{{ route('home') }}" class="nav-link {{ Request::is('/') ? 'active' : '' }}">
         <i class="nav-icon fas fa-home"></i>
         <p>
-            Accueil
+            {{ __('app.home') }}
         </p>
     </a>
 </li>
