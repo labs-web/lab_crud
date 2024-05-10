@@ -15,7 +15,7 @@ order: 2
 ## Introduction
 
 
-![Introduction](lab_crud/introduction/images/introduction.jpg){:width="50%"}*figure: Introduction*
+![Introduction](/lab_crud/introduction/images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
 
