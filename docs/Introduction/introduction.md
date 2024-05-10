@@ -7,7 +7,6 @@ presentationPackage: GestionProjects
 order: 2
 ---
 
-
 # Rapport : lab crud
 {:class="sectionHeader"}
 
@@ -15,10 +14,8 @@ order: 2
 
 ## Introduction
 
-![Empathie de chef de projet](/{{site.baseurl}}/besoin/images/empathyChef.PNG){:width="900px"}
 
-
-![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
+![Introduction](/lab_crud/introduction/images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
 

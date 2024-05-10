@@ -53,8 +53,6 @@
                                             <tr>
                                                 <th>Titre</th>
                                                 <th>Description</th>
-                                                <th>Date de Début</th>
-                                                <th>Date de Fin</th>
                                                 <th class="text-center">Actions</th>
                                             </tr>
                                         </thead>
@@ -64,10 +62,8 @@
                                                 <td>
                                                     Description du projet 1.
                                                 </td>
-                                                <td>11-7-2014</td>
-                                                <td>11-7-2014</td>
                                                 <td class="text-center">
-                                                <a href="../taches/index.php" class="btn btn-sm btn-secondary mx-2"><i class="nav-icon fas fa-tasks"></i> Les Tâches</a>
+                                                
                                                     <a href="./show.php" class='btn btn-default btn-sm'>
                                                         <i class="far fa-eye"></i>
                                                     </a>
@@ -80,10 +76,8 @@
                                                 <td>
                                                     Description du projet 2.
                                                 </td>
-                                                <td>11-7-2014</td>
-                                                <td>11-7-2014</td>
                                                 <td class="text-center">
-                                                <a href="../taches/index.php" class="btn btn-sm btn-secondary mx-2"><i class="nav-icon fas fa-tasks"></i> Les Tâches</a>
+                                                
                                                     <a href="./show.php" class='btn btn-default btn-sm'>
                                                         <i class="far fa-eye"></i>
                                                     </a>
@@ -96,10 +90,8 @@
                                                 <td>
                                                     Description du projet 3.
                                                 </td>
-                                                <td>11-7-2014</td>
-                                                <td>11-7-2014</td>
                                                 <td class="text-center">
-                                                <a href="../taches/index.php" class="btn btn-sm btn-secondary mx-2"><i class="nav-icon fas fa-tasks"></i> Les Tâches</a>
+                                                
                                                     <a href="./show.php" class='btn btn-default btn-sm'>
                                                         <i class="far fa-eye"></i>
                                                     </a>
