@@ -22,7 +22,7 @@ npm install
 ```
 
 
-1. Créer un fichier .env en copiant .env.example :
+4. Créer un fichier .env en copiant .env.example :
    
 ```bash
 cp .env.example .env
