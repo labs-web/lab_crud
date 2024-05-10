@@ -6,10 +6,15 @@ package: GestionProjects
 presentationPackage: GestionProjects
 order: 2
 ---
-# Rapport Gestion Projets
+
+
+# Rapport : lab crud
 {:class="sectionHeader"}
+
 <!-- new slide -->
+
 ## Introduction
+
 ![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
