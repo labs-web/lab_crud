@@ -11,7 +11,7 @@ order: 4
 <!-- new slide -->
 ## Ideation
 
-![Ideation](/lab_crud/analyse fonctionnelle/images/ideation.jpg){:width="1000px"}
+![Ideation](/{{site.baseurl}}/analyse fonctionnelle/images/ideation.jpg){:width="1000px"}
 *figure: ideation*
 
 <!-- note -->
@@ -22,7 +22,7 @@ order: 4
 <!-- new slide -->
 ## Diagramme de cas d'utilisation 
 
-![Pôle social ](/lab_crud/analyse fonctionnelle/images/use-cas.png){: width="900px" }*Figure : Diagramme de cas d'utilisation detailer*
+![Pôle social ](/{{site.baseurl}}/analyse fonctionnelle/images/use-cas.png){: width="900px" }*Figure : Diagramme de cas d'utilisation detailer*
 
 
 <!-- new slide -->

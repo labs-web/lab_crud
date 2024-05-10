@@ -15,6 +15,9 @@ order: 2
 
 ## Introduction
 
+![Empathie de chef de projet](/{{site.baseurl}}/besoin/images/empathyChef.PNG){:width="900px"}
+
+
 ![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
 
 <!-- note -->
