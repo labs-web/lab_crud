@@ -6,9 +6,31 @@ package: GestionProjects
 presentationPackage: GestionProjects
 order: 2
 ---
+
+<!-- TODO
+
+Les noms valide 
+- Conclusion
+- Introduction
+- Table-de-matière
+
+Des noms non valide : 
+- documentation
+- Gestion-projets 
+
+Liste des noms valide 
+- Analyse-fonctionnelle
+- Analyse-techniques
+- Besoin
+- Conception
+- Realisation
+-->
+
+<!-- TODO : Le nom du chapitre incorrecte : Rapport lab:CRUD -->
 # Rapport Gestion Projets
 {:class="sectionHeader"}
 <!-- new slide -->
+
 ## Introduction
 ![Introduction](./images/introduction.jpg){:width="50%"}*figure: Introduction*
 

@@ -1,4 +1,10 @@
-// Table de matière
+
+// TODO : Le nom de fichier ne doit pas contient des caractère accentué
+// Il doit être tableDeMatiere.app.js
+
+/**
+ * Table de matière
+ */
 const tableDeMatiere = document.getElementById('table-de-matière');
 const h1AndH2Elements = document.querySelectorAll('h1, h2');
 
