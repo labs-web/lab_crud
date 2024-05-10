@@ -1,6 +1,3 @@
-// TODO : 
-// - modification de nom de fichier vers : linkModifier.app.js
-
 
 /**
  * TODO : comments - le rôle de ce script

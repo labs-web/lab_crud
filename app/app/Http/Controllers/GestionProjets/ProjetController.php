@@ -89,8 +89,7 @@ class ProjetController extends AppBaseController
     public function destroy(string $id)
     {
         $this->projectRepository->destroy($id);
-        $projectData = $this->projectRepository->paginate();
-        return view('GestionProjets.projet.index', compact('projectData'))->with('succes',__('GestionProjets/projet.singular').' '.__('app.deleteSucées'));
+        return redirect()->route('projets.index')->with('success', 'Le projet a été supprimer avec succés.');
     }
 
 
