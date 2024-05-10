@@ -51,7 +51,7 @@ class ProjetController extends AppBaseController
         try {
             $validatedData = $request->validated();
             $this->projectRepository->create($validatedData);
-            return redirect()->route('projets.index')->with('success','GestionProjets/projet/message.singular'.''.'app.addSucées');
+            return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').''.__('app.addSucées'));
 
         } catch (ProjectAlreadyExistException $e) {
             return back()->withInput()->withErrors(['project_exists' => __('GestionProjets/projet/message.createProjectException')]);
