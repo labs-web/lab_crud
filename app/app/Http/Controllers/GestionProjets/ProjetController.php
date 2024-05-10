@@ -54,7 +54,7 @@ class ProjetController extends AppBaseController
             return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.addSucées'));
 
         } catch (ProjectAlreadyExistException $e) {
-            return back()->withInput()->withErrors(['project_exists' => __('GestionProjets/projet/message.createProjectException')]);
+            return back()->withInput()->withErrors(['project_exists' => __('GestionProjets/projet.singular').' '.__('app.existdeja')]);
         } catch (\Exception $e) {
             return abort(500);
         }
@@ -89,7 +89,7 @@ class ProjetController extends AppBaseController
     public function destroy(string $id)
     {
         $this->projectRepository->destroy($id);
-        return redirect()->route('projets.index')->with('success', 'Le projet a été supprimer avec succés.');
+        return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.deleteSucées'));
     }
 
 
