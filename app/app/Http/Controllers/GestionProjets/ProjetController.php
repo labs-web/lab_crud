@@ -51,7 +51,7 @@ class ProjetController extends AppBaseController
         try {
             $validatedData = $request->validated();
             $this->projectRepository->create($validatedData);
-            return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').''.__('app.addSucées'));
+            return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.addSucées'));
 
         } catch (ProjectAlreadyExistException $e) {
             return back()->withInput()->withErrors(['project_exists' => __('GestionProjets/projet/message.createProjectException')]);
@@ -82,7 +82,7 @@ class ProjetController extends AppBaseController
     {
         $validatedData = $request->validated();
         $this->projectRepository->update($id, $validatedData);
-        return redirect()->route('projets.index', $id)->with('success', 'GestionProjets/projet/message.singular'.''.'app.updateSucées');
+        return redirect()->route('projets.index', $id)->with('success',__('GestionProjets/projet.singular').' '.__('app.updateSucées'));
     }
 
 
@@ -90,7 +90,7 @@ class ProjetController extends AppBaseController
     {
         $this->projectRepository->destroy($id);
         $projectData = $this->projectRepository->paginate();
-        return view('GestionProjets.projet.index', compact('projectData'))->with('succes', 'GestionProjets/projet/message.singular'.''.'app.deleteSucées');
+        return view('GestionProjets.projet.index', compact('projectData'))->with('succes',__('GestionProjets/projet.singular').' '.__('app.deleteSucées'));
     }
 
 
@@ -113,6 +113,6 @@ class ProjetController extends AppBaseController
         } catch (\InvalidArgumentException $e) {
             return redirect()->route('projets.index')->withError('Le symbole de séparation est introuvable. Pas assez de données disponibles pour satisfaire au format.');
         }
-        return redirect()->route('projets.index')->with('success','GestionProjets/projet/message.singular'.''.'app.addSucées');
+        return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.addSucées'));
     }
 }
