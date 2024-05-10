@@ -15,7 +15,7 @@ order: 5
 
 ### Les package utilisé
 
-![Les package utilisé](/lab_crud/Analyse-Techniques/Les-package-utilisé/images/1_n2YyXncCgoWgemC6xjZG4w.jpg){:width="900px"}*figure: Les package utilisé*
+![Les package utilisé](/lab_crud/Analyse-Techniques/package-utilisé/images/package.jpg){:width="900px"}*figure: Les package utilisé*
 
 <!-- note -->
 
