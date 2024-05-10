@@ -82,7 +82,7 @@ class ProjetController extends AppBaseController
     {
         $validatedData = $request->validated();
         $this->projectRepository->update($id, $validatedData);
-        return redirect()->route('projets.index', $id)->with('success', 'Le projet a été modifier avec succès.');
+        return redirect()->route('projet.index')->with('success', 'Le projet a été modifier avec succès.');
     }
 
 
