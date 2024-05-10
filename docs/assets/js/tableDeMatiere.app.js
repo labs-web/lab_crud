@@ -1,11 +1,8 @@
 
-// TODO : Le nom de fichier ne doit pas contient des caractère accentué
-// Il doit être tableDeMatiere.app.js
-
 /**
- * Table de matière
+ * table de matiere
  */
-const tableDeMatiere = document.getElementById('table-de-matière');
+const tableDeMatiere = document.getElementById('table-de-matiere');
 const h1AndH2Elements = document.querySelectorAll('h1, h2');
 
 // Create a new unordered list element
