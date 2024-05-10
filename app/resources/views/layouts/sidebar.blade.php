@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-info elevation-4">
     <a href="{{ route('home') }}" class="brand-link">
-        <img src="{{ asset('assets/images/logo.png') }}" alt="logo ofppt" class="brand-image img-circle elevation-3">
+        <img src="{{ asset('images/logo.png') }}" alt="logo ofppt" class="brand-image img-circle elevation-3">
         <span class="brand-text font-weight-light h6">Lab CRUD</span>
     </a>
 
@@ -12,5 +12,4 @@
             </ul>
         </nav>
     </div>
-
 </aside>
