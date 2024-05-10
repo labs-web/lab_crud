@@ -16,7 +16,7 @@ order:  8
 
 <!-- new slide -->
 
-## Diagramme de classe de Authorization
+## Diagramme de classe de sécurité
 
 ![Diagramme de classes de Authorization](/lab_crud/conception/Diagramme-classe/Images/diagramme-classe-authorization.PNG){:width="70%"}*figure: diagramme de classe de Authorization*
 
