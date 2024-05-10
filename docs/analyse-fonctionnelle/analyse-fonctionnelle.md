@@ -30,8 +30,7 @@ L'utilisation du diagramme de cas d'utilisation simplifie la clarification et l'
 {:class="introduction"}
 
 
-![Cas d'utilisation]({{site.baseurl}}/analyse-fonctionnelle/images/use-case.png){: width="900px" }*Figure : Cas d'utilisation detailer*
+![Cas d'utilisation]({{site.baseurl}}/analyse-fonctionnelle/images/use-case.png){: width="900px" }*Figure : Cas d'utilisation détaillé*
 
-<!-- TODO : Ajouter les autres utilisateurs -->
 
 <!-- new slide -->
