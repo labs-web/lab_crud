@@ -13,7 +13,7 @@ order: 5
 
 ## Capturer les besoins techniques
 
-### Les package utilisé
+### Les package à utiliser
 
 ![Les package utilisé](/lab_crud/Analyse-Techniques/package-utilisé/images/package.jpg){:width="900px"}*figure: Les package utilisé*
 
