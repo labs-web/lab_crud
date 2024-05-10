@@ -51,7 +51,7 @@ order: 5
 
 ## Gestion des exceptions 
 
-![Gestion des exceptions](/lab_crud/Analyse-Techniques/Les-package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
+![Gestion des exceptions](/lab_crud/Analyse-Techniques/package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
 
 <!-- note -->
 - Nous avons adopté une approche de gestion des exceptions afin de traiter les erreurs de manière efficace et efficiente.
