@@ -5,7 +5,7 @@ namespace App\Models\GestionProjets;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Projet extends Model
+class Tag extends Model
 {
     use HasFactory;
     
@@ -14,9 +14,9 @@ class Projet extends Model
         'description',    
     ];
    
-    public function tags()
+    public function projets()
     {
-        return $this->belongsToMany(Tag::class, 'projet_tags', 'projet_id', 'tag_id');
+        return $this->belongsToMany(Projet::class, 'projet_tags', 'tag_id', 'projet_id');
     }
 }
 

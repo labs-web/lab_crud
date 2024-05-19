@@ -7,6 +7,7 @@ use Symfony\Component\Uid\NilUuid;
 
 use Database\Seeders\GestionProjets\{
     ProjetsSeeder,
+    TagsSeeder
 };
 
 
@@ -22,6 +23,7 @@ class GestionProjetsSeeder extends Seeder
     {
         return [
             ProjetsSeeder::class,
+            TagsSeeder::class
         ];
     }
 }
