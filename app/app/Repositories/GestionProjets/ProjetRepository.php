@@ -42,7 +42,7 @@ class ProjetRepository extends BaseRepository
 
     public function paginate($search = [], $perPage = 0, array $columns = ['*']): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
-        dd($this->model->with('tags')->paginate($perPage, $columns));
+        return $this->model->with('tags')->paginate($perPage, $columns);
     }
 
     /**

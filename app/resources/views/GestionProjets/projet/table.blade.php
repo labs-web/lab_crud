@@ -11,7 +11,7 @@
             @foreach ($projectData as $project)
                 <tr>
                     <td>{{ $project->nom }}</td>
-                    <td>{{ $project->description }}</td>
+                    <td>{!! $project->description !!}</td>
 
                     <td class="text-center">
                         @can('show-ProjetController')
