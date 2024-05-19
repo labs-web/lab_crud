@@ -4,7 +4,6 @@
 @section('content')
     <div class="content-header">
     </div>
-
     <section class="content">
         <div class="container-fluid">
             <div class="row">

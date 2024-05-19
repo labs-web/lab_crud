@@ -76,12 +76,12 @@
     "src": "node_modules/admin-lte/plugins/summernote/font/summernote.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-26c07e1c.css",
+    "file": "assets/app-d3608a7b.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-a6e183a9.js",
+    "file": "assets/app-238440c3.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
