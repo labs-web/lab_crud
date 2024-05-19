@@ -4,6 +4,8 @@ namespace App\Models\GestionProjets;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\GestionProjets\Tag;
+
 
 class Projet extends Model
 {
@@ -14,9 +16,10 @@ class Projet extends Model
         'description',    
     ];
    
+   
     public function tags()
     {
-        return $this->belongsToMany(Tag::class, 'projet_tags', 'projet_id', 'tag_id');
+        return $this->belongsToMany(Tag::class, 'projet_tags')->withTimestamps();
     }
 }
 

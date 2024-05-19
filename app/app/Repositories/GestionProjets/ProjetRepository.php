@@ -5,6 +5,8 @@ use App\Models\GestionProjets\Projet;
 use App\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
 use App\Exceptions\GestionProjets\ProjectAlreadyExistException;
+use App\Models\GestionProjets\Tag;
+
 
 /**
  * Classe ProjetRepository qui gère la persistance des projets dans la base de données.
@@ -48,13 +50,24 @@ class ProjetRepository extends BaseRepository
     public function create(array $data)
     {
         $nom = $data['nom'];
-
-        $existingProject =  $this->model->where('nom', $nom)->exists();
-
+    
+        $existingProject = $this->model->where('nom', $nom)->exists();
+    
         if ($existingProject) {
             throw ProjectAlreadyExistException::createProject();
         } else {
-            return parent::create($data);
+            $tags = $data['tags'];
+            $projet = parent::create([
+                'nom' => $data['nom'],
+                'description' => $data['description'],
+            ]);
+    
+            foreach ($tags as $tagId) {
+                $tag = Tag::find($tagId);
+                if ($tag) {
+                    $projet->tags()->attach($tag); 
+                }
+            }
         }
     }
 
