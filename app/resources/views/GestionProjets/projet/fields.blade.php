@@ -22,6 +22,24 @@
                 <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
+
+
+        <div class="form-group">
+            <label for="inputDescription">{{ __('app.description') }}</label>
+           
+
+            <select class="select2" multiple="multiple" style="width: 100%;">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+            </select>
+
+            @error('description')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
     </div>
 
     <div class="card-footer">
