@@ -12,6 +12,7 @@ use App\Repositories\GestionProjets\ProjetRepository;
 use App\Http\Controllers\AppBaseController;
 use Carbon\Carbon;
 use App\Exports\GestionProjets\projetExport;
+use App\Repositories\GestionProjets\TagRepository;
 use Maatwebsite\Excel\Facades\Excel;
 
 class ProjetController extends AppBaseController
@@ -38,10 +39,11 @@ class ProjetController extends AppBaseController
     }
 
 
-    public function create()
+    public function create(TagRepository $tagRepository)
     {
         $dataToEdit = null;
-        return view('GestionProjets.projet.create', compact('dataToEdit'));
+        $tags = $tagRepository->all();
+        return view('GestionProjets.projet.create', compact('dataToEdit','tags'));
     }
 
 

@@ -25,15 +25,11 @@
 
 
         <div class="form-group">
-            <label for="inputDescription">{{ __('app.description') }}</label>
-           
-
+            <label for="inputDescription">{{ __('GestionProjets/tag.plural') }}</label>
             <select class="select2" multiple="multiple" style="width: 100%;">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-                <option value="4">Option 4</option>
-                <option value="5">Option 5</option>
+                @foreach ($tags as $tag)
+                    <option value="{{ $tag->id }}">{{ $tag->nom }}</option>
+                @endforeach
             </select>
 
             @error('description')
