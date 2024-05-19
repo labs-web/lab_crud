@@ -70,13 +70,14 @@ class ProjetController extends AppBaseController
     }
 
 
-    public function edit(string $id)
+    public function edit(string $id,TagRepository $tagRepository)
     {
         $dataToEdit = $this->projectRepository->find($id);
         $dataToEdit->date_debut = Carbon::parse($dataToEdit->date_debut)->format('Y-m-d');
         $dataToEdit->date_de_fin = Carbon::parse($dataToEdit->date_de_fin)->format('Y-m-d');
+        $tags = $tagRepository->all();
 
-        return view('GestionProjets.projet.edit', compact('dataToEdit'));
+        return view('GestionProjets.projet.edit', compact('dataToEdit','tags'));
     }
 
 

@@ -45,6 +45,10 @@ class ProjetRepository extends BaseRepository
         return $this->model->with('tags')->paginate($perPage, $columns);
     }
 
+    public function find($id, array $columns = ['*']){
+        return $this->model->with('tags')->find($id);
+    }
+
     /**
      * Crée un nouveau projet.
      *
@@ -74,6 +78,35 @@ class ProjetRepository extends BaseRepository
                 }
             }
         }
+    }
+
+    public function update($id, array $data)
+    {
+        $projet = $this->model->find($id);
+
+        if (!$projet) {
+            return false; 
+        }
+
+        $projet->update([
+            'nom' => $data['nom'],
+            'description' => $data['description'],
+        ]);
+
+        // Sync the tags
+        $tags = $data['tags'];
+        $tagIds = [];
+
+        foreach ($tags as $tagId) {
+            $tag = Tag::find($tagId);
+            if ($tag) {
+                $tagIds[] = $tag->id;
+            }
+        }
+
+        $projet->tags()->sync($tagIds);
+
+        return true;
     }
 
     /**
