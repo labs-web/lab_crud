@@ -19,7 +19,7 @@ class TagsSeeder extends Seeder
         $MembreRole = User::MEMBRE;
 
         Schema::disableForeignKeyConstraints();
-        Projet::truncate();
+        Tag::truncate();
         Schema::enableForeignKeyConstraints();
 
         $csvFile = fopen(base_path("database/data/tags.csv"), "r");
@@ -27,10 +27,12 @@ class TagsSeeder extends Seeder
         $i = 0;
         while (($data = fgetcsv($csvFile)) !== FALSE) {
             if (!$firstline) {
-                Tag::create([
-                    "nom"=>$data['0'],
-                    "description" =>$data['1']
-                ]);
+                if (isset($data[0]) && isset($data[1])) {
+                    Tag::create([
+                        "nom" => $data[0],
+                        "description" => $data[1]
+                    ]);
+                }
             }
             $firstline = false;
         }

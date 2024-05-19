@@ -13,6 +13,7 @@ use Database\Seeders\{
 use Database\Seeders\Autorisation\RoleSeeder;
 use Database\Seeders\GestionProjets\{
     ProjetsSeeder,
+    TagsSeeder,
 };
 
 
