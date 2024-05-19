@@ -9,7 +9,7 @@ use App\Exceptions\GestionProjets\TagAlreadyExistException;
 /**
  * Classe TagRepository qui gère la persistance des tags dans la base de données.
  */
-class ProjetRepository extends BaseRepository
+class TagRepository extends BaseRepository
 {
     /**
      * Les champs de recherche disponibles pour les tags.
