@@ -12,6 +12,7 @@ use App\Repositories\GestionProjets\ProjetRepository;
 use App\Http\Controllers\AppBaseController;
 use Carbon\Carbon;
 use App\Exports\GestionProjets\projetExport;
+use App\Repositories\GestionProjets\TagRepository;
 use Maatwebsite\Excel\Facades\Excel;
 
 class TagController extends AppBaseController
@@ -61,11 +62,11 @@ class TagController extends AppBaseController
     }
 
 
-    public function show(string $id)
-    {
-        $fetchedData = $this->tagRepository->find($id);
-        return view('GestionProjets.tag.show', compact('fetchedData'));
-    }
+    // public function show(string $id)
+    // {
+    //     $fetchedData = $this->tagRepository->find($id);
+    //     return view('GestionProjets.tag.show', compact('fetchedData'));
+    // }
 
 
     public function edit(string $id)
