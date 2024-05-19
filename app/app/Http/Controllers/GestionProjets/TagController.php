@@ -12,6 +12,7 @@ use App\Repositories\GestionProjets\ProjetRepository;
 use App\Http\Controllers\AppBaseController;
 use Carbon\Carbon;
 use App\Exports\GestionProjets\projetExport;
+use App\Http\Requests\GestionProjets\tagRequest;
 use App\Repositories\GestionProjets\TagRepository;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -25,17 +26,17 @@ class TagController extends AppBaseController
 
     public function index(Request $request)
     {
-       
+
         if ($request->ajax()) {
             $searchValue = $request->get('searchValue');
             if ($searchValue !== '') {
                 $searchQuery = str_replace(' ', '%', $searchValue);
-                $projectData = $this->tagRepository->searchData($searchQuery);
-                return view('GestionProjets.tag.index', compact('projectData'))->render();
+                $tagsData = $this->tagRepository->searchData($searchQuery);
+                return view('GestionProjets.tag.index', compact('tagsData'))->render();
             }
         }
-        $projectData = $this->tagRepository->paginate();
-        return view('GestionProjets.tag.index', compact('projectData'));
+        $tagsData = $this->tagRepository->paginate();
+        return view('GestionProjets.tag.index', compact('tagsData'));
     }
 
 
@@ -46,14 +47,12 @@ class TagController extends AppBaseController
     }
 
 
-    public function store(projetRequest $request)
+    public function store(tagRequest $request)
     {
-
         try {
             $validatedData = $request->validated();
             $this->tagRepository->create($validatedData);
-            return redirect()->route('tags.index')->with('success',__('GestionProjets/tag.singular').' '.__('app.addSucées'));
-
+            return redirect()->route('tags.index')->with('success', __('GestionProjets/tag.singular') . ' ' . __('app.addSucées'));
         } catch (ProjectAlreadyExistException $e) {
             return back()->withInput()->withErrors(['tag_exists' => __('GestionProjets/projet/message.createProjectException')]);
         } catch (\Exception $e) {
@@ -62,19 +61,16 @@ class TagController extends AppBaseController
     }
 
 
-    // public function show(string $id)
-    // {
-    //     $fetchedData = $this->tagRepository->find($id);
-    //     return view('GestionProjets.tag.show', compact('fetchedData'));
-    // }
+    public function show(string $id)
+    {
+        $fetchedData = $this->tagRepository->find($id);
+        return view('GestionProjets.tag.show', compact('fetchedData'));
+    }
 
 
     public function edit(string $id)
     {
         $dataToEdit = $this->tagRepository->find($id);
-        $dataToEdit->date_debut = Carbon::parse($dataToEdit->date_debut)->format('Y-m-d');
-        $dataToEdit->date_de_fin = Carbon::parse($dataToEdit->date_de_fin)->format('Y-m-d');
-
         return view('GestionProjets.tag.edit', compact('dataToEdit'));
     }
 
@@ -83,7 +79,7 @@ class TagController extends AppBaseController
     {
         $validatedData = $request->validated();
         $this->tagRepository->update($id, $validatedData);
-        return redirect()->route('tags.index', $id)->with('success',__('GestionProjets/tag.singular').' '.__('app.updateSucées'));
+        return redirect()->route('tags.index', $id)->with('success', __('GestionProjets/tag.singular') . ' ' . __('app.updateSucées'));
     }
 
 
@@ -113,6 +109,6 @@ class TagController extends AppBaseController
         } catch (\InvalidArgumentException $e) {
             return redirect()->route('tags.index')->withError('Le symbole de séparation est introuvable. Pas assez de données disponibles pour satisfaire au format.');
         }
-        return redirect()->route('tags.index')->with('success',__('GestionProjets/tag.singular').' '.__('app.addSucées'));
+        return redirect()->route('tags.index')->with('success', __('GestionProjets/tag.singular') . ' ' . __('app.addSucées'));
     }
 }

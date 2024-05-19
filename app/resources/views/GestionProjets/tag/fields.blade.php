@@ -1,4 +1,4 @@
-<form action="{{ $dataToEdit ? route('projets.update', $dataToEdit->id) : route('projets.store') }}" method="POST">
+<form action="{{ $dataToEdit ? route('tags.update', $dataToEdit->id) : route('tags.store') }}" method="POST">
     @csrf
     @if ($dataToEdit)
         @method('PUT')

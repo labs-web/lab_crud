@@ -11,7 +11,7 @@
             @foreach ($tagsData as $tag)
                 <tr>
                     <td>{{ $tag->nom }}</td>
-                    <td>{{ $tag->description }}</td>
+                    <td>{!! $tag->description !!}</td>
 
                     <td class="text-center">
                         @can('show-TagController')
@@ -20,7 +20,7 @@
                             </a>
                         @endcan
                         @can('edit-TagController')
-                            <a href="{{ route('Tags.edit', $tag) }}" class="btn btn-sm btn-default">
+                            <a href="{{ route('tags.edit', $tag) }}" class="btn btn-sm btn-default">
                                 <i class="fas fa-pen-square"></i>
                             </a>
                         @endcan

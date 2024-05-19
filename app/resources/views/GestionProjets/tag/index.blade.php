@@ -26,7 +26,7 @@
 
                 <div class="col-sm-6">
                     <div class="float-sm-right">
-                        @can('create-ProjetController')
+                        @can('create-TagController')
                             <a href="{{ route('tags.create') }}" class="btn btn-info">
                                 <i class="fas fa-plus"></i>
                                 {{ __('app.add') }} {{ __('GestionProjets/tag.singular') }}
