@@ -26,7 +26,7 @@
 
         <div class="form-group">
             <label for="inputDescription">{{ __('GestionProjets/tag.plural') }}</label>
-            <select class="select2" multiple="multiple" style="width: 100%;">
+            <select class="select2" name="tags[]" multiple="multiple" style="width: 100%;">
                 @foreach ($tags as $tag)
                     <option value="{{ $tag->id }}">{{ $tag->nom }}</option>
                 @endforeach
