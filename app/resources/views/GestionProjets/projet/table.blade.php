@@ -4,6 +4,7 @@
             <tr>
                 <th>{{ __('GestionProjets/projet.singular') }}</th>
                 <th>{{ __('app.description') }}</th>
+                <th>{{ __('GestionProjets/tag.plural') }}</th>
                 <th class="text-center">{{ __('app.action') }}</th>
             </tr>
         </thead>
@@ -12,6 +13,13 @@
                 <tr>
                     <td>{{ $project->nom }}</td>
                     <td>{!! $project->description !!}</td>
+                    <td>
+                        <ul>
+                            @foreach ($project->tags as $item)
+                                <li>{{ $item->nom }}</li>
+                            @endforeach
+                        </ul>
+                    </td>
 
                     <td class="text-center">
                         @can('show-ProjetController')
@@ -63,7 +71,7 @@
             </form>
         @endcan
     </div>
-    
+
     <ul class="pagination  m-0 float-right">
         {{ $projectData->onEachSide(1)->links() }}
     </ul>

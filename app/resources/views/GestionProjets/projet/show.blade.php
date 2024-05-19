@@ -40,17 +40,16 @@
                                     <p class="text-secondary">Aucune information disponible</p>
                                 @endif
                             </div>
-
                             <div class="col-sm-12">
                                 <label for="tags">{{ __('GestionProjets/tag.plural') }}:</label>
-
-                                @foreach ($fetchedData->tags as $item)
-
-                                <li>{{ $item->nom }}</li>
-                                    
-                                @endforeach
+                                <ul> 
+                                    @foreach ($fetchedData->tags as $item)
+                                        <li>{{ $item->nom }}</li>
+                                    @endforeach
+                                </ul> 
                             </div>
-                          
+
+
 
                         </div>
                     </div>
