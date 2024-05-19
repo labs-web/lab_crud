@@ -40,6 +40,11 @@ class ProjetRepository extends BaseRepository
         parent::__construct(new Projet());
     }
 
+    public function paginate($search = [], $perPage = 0, array $columns = ['*']): \Illuminate\Contracts\Pagination\LengthAwarePaginator
+    {
+        dd($this->model->with('tags')->paginate($perPage, $columns));
+    }
+
     /**
      * Crée un nouveau projet.
      *
