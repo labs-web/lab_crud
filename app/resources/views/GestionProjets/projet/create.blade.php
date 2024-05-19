@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', __('app.add') . ' ' . __('GestionProjets/projet.singular'))
+
 @section('content')
     <div class="content-header">
         @if ($errors->has('project_exists'))

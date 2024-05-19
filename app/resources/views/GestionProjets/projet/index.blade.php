@@ -19,7 +19,6 @@
                             $lang = Config::get('app.locale');
                             $translatedName = TranslationHelper::getTitle(__('GestionProjets/projet.singular'), $lang);
                             echo $translatedName;
-
                         @endphp
                     </h1>
                 </div>

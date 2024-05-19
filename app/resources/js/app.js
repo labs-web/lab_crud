@@ -1,6 +1,9 @@
 import 'bootstrap';
 // Import jQuery
-import 'jquery/dist/jquery';
+import 'https://code.jquery.com/jquery-3.6.0.min.js';
+// select2
+import 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js';
+
 // Import AdminLTE
 import "admin-lte/dist/js/adminlte";
 import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle';
@@ -47,3 +50,8 @@ $(document).ready(function () {
     }
 
 })
+
+$(document).ready(function() {
+    console.log("Document is ready.");
+    $('.select2').select2();
+});
