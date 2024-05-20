@@ -1,11 +1,10 @@
 @extends('layouts.app')
-@section('title', __('app.add') . ' ' . __('GestionProjets/projet.singular'))
-
+@section('title', __('app.add') . ' ' . __('GestionProjets/tag.singular'))
 @section('content')
     <div class="content-header">
         @if ($errors->has('project_exists'))
             <div class="alert alert-danger">
-                {{ $errors->first('project_exists') }}
+                {{ $errors->first('tag_exists') }}
             </div>
         @else
             @if ($errors->has('unexpected_error'))
@@ -23,11 +22,11 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <i class="nav-icon fas fa-table"></i>
-                                {{ __('app.add') }} {{ __('GestionProjets/projet.singular') }}
+                                {{ __('app.add') }} {{ __('GestionProjets/tag.singular') }}
                             </h3>
                         </div>
                         <!-- Obtenir le formulaire -->
-                        @include('GestionProjets.projet.fields')
+                        @include('GestionProjets.tag.fields')
                     </div>
                 </div>
             </div>
