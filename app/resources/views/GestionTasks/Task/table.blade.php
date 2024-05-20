@@ -2,12 +2,12 @@
     <table class="table table-striped text-nowrap">
         <thead>
             <tr>
-                <th>{{ __('GestionTasks/task/message.titre') }}</th>
+                <th>{{ __('GestionTasks/tache.singular') }}</th>
                 <th>{{ __('app.description') }}</th>
                 <th class="text-center">{{ __('app.action') }}</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody> 
             @foreach ($projectData as $project)
                 <tr>
                     <td>{{ $project->nom }}</td>

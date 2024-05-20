@@ -17,8 +17,12 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1>
-                         @php
-                            title(__('app.list'), __('GestionTasks/task/message.titre'), Config::get('app.locale') );
+                        @php
+                            // Generate the title using the title function
+                            use App\helpers\TranslationHelper;
+                            $lang = Config::get('app.locale');
+                            $translatedName = TranslationHelper::getTitle(__('GestionTasks/tache.singular'), $lang);
+                            echo $translatedName;
                         @endphp
                     </h1>
                 </div>
@@ -27,7 +31,7 @@
                     <div class="float-sm-right">
                         <a href="{{ route('tasks.create') }}" class="btn btn-info">
                             <i class="fas fa-plus"></i>
-                            {{ __('app.add') }} {{ __('GestionTasks/task/message.titre') }}
+                            {{ __('app.add') }} {{ __('GestionTasks/tache.singular') }}
                         </a>
                     </div>
                 </div>
