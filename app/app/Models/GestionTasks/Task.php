@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Models\Prototype;
+namespace App\Models\GestionTasks;
 
+use App\Models\GestionProjets\Projet;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,13 +19,8 @@ class Task extends Model
             'updated_at'  ,
         ];
 
-    public function ayah()
+    public function project()
     {
-        return $this->belongsTo(Ayah::class,'ayah_id');
-    }
-
-    public function topic()
-    {
-        return $this->belongsTo(Topic::class,'topic_id');
+        return $this->belongsTo(Projet::class,'project_id');
     }
 }

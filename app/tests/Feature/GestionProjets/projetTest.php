@@ -1,27 +1,27 @@
 <?php
 
-namespace Tests\Feature\GestionProjets;
+namespace Tests\Feature\GestionTasks;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use App\Repositories\GestionProjets\ProjetRepository;
-use App\Models\GestionProjets\Projet;
+use App\Repositories\GestionTasks\TaskRepository;
+use App\Models\GestionTasks\Task;
 use Tests\TestCase;
-use App\Exceptions\GestionProjets\ProjectAlreadyExistException;
+use App\Exceptions\GestionTasks\TaskAlreadyExistException;
 
 /**
- * Classe de test pour tester les fonctionnalités du module de projets.
+ * Classe de test pour tester les fonctionnalités du module de tasks.
 */
 class projetTest extends TestCase
 {
     use DatabaseTransactions;
 
     /**
-     * Le référentiel de projets utilisé pour les tests.
+     * Le référentiel de tasks utilisé pour les tests.
      *
-     * @var ProjetRepository
+     * @var TaskRepository
     */
-    protected $projectRepository;
+    protected $taskRepository;
 
     /**
      * L'utilisateur utilisé pour les tests.
@@ -37,24 +37,24 @@ class projetTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->projectRepository = new ProjetRepository(new Projet);
+        $this->taskRepository = new TaskRepository(new Task);
         $this->user = User::factory()->create();
     }
 
     /**
-     * Teste la pagination des projets.
+     * Teste la pagination des tasks.
     */
     public function test_paginate()
     {
         $this->actingAs($this->user);
-        $projectData = [
-            'nom' => 'project create test',
-            'description' => 'project create test',
+        $taskData = [
+            'nom' => 'task create test',
+            'description' => 'task create test',
             
         ];
-        $project = $this->projectRepository->create($projectData);
-        $projects = $this->projectRepository->paginate();
-        $this->assertNotNull($projects);
+        $task = $this->taskRepository->create($taskData);
+        $tasks = $this->taskRepository->paginate();
+        $this->assertNotNull($tasks);
     }
 
 
@@ -64,34 +64,34 @@ class projetTest extends TestCase
     public function test_create()
     {
         $this->actingAs($this->user);
-        $projectData = [
-            'nom' => 'project create test',
-            'description' => 'project create test',
+        $taskData = [
+            'nom' => 'task create test',
+            'description' => 'task create test',
             
         ];
-        $project = $this->projectRepository->create($projectData);
-        $this->assertEquals($projectData['nom'], $project->nom);
+        $task = $this->taskRepository->create($taskData);
+        $this->assertEquals($taskData['nom'], $task->nom);
     }
 
     /**
      * Teste la création d'un projet déjà existant.
     */
-    public function test_create_project_already_exist()
+    public function test_create_task_already_exist()
     {
         $this->actingAs($this->user);
 
-        $project = Projet::factory()->create();
-        $projectData = [
-            'nom' => $project->nom,
-            'description' => 'project create test',
+        $task = Task::factory()->create();
+        $taskData = [
+            'nom' => $task->nom,
+            'description' => 'task create test',
            
         ];
 
         try {
-            $project = $this->projectRepository->create($projectData);
-            $this->fail('Expected ProjectException was not thrown');
-        } catch (ProjectAlreadyExistException $e) {
-            $this->assertEquals(__('GestionProjets/projet/message.createProjectException'), $e->getMessage());
+            $task = $this->taskRepository->create($taskData);
+            $this->fail('Expected TaskException was not thrown');
+        } catch (TaskAlreadyExistException $e) {
+            $this->assertEquals(__('GestionTasks/projet/message.createTaskException'), $e->getMessage());
         } catch (\Exception $e) {
             $this->fail('Unexpected exception was thrown: ' . $e->getMessage());
         }
@@ -103,41 +103,41 @@ class projetTest extends TestCase
     public function test_update()
     {
         $this->actingAs($this->user);
-        $project = Projet::factory()->create();
-        $projectData = [
-            'nom' => 'project update test',
-            'description' => 'project update test',
+        $task = Task::factory()->create();
+        $taskData = [
+            'nom' => 'task update test',
+            'description' => 'task update test',
            
         ];
-        $this->projectRepository->update($project->id, $projectData);
-        $this->assertDatabaseHas('projets', $projectData);
+        $this->taskRepository->update($task->id, $taskData);
+        $this->assertDatabaseHas('tasks', $taskData);
     }
 
     /**
      * Teste la suppression d'un projet.
     */
-    public function test_delete_project()
+    public function test_delete_task()
     {
         $this->actingAs($this->user);
-        $project = Projet::factory()->create();
-        $this->projectRepository->destroy($project->id);
-        $this->assertDatabaseMissing('projets', ['id' => $project->id]);
+        $task = Task::factory()->create();
+        $this->taskRepository->destroy($task->id);
+        $this->assertDatabaseMissing('tasks', ['id' => $task->id]);
     }
 
     /**
-     * Teste la recherche de projets.
+     * Teste la recherche de tasks.
     */
-    public function test_project_search()
+    public function test_task_search()
     {
         $this->actingAs($this->user);
-        $projectData = [
+        $taskData = [
             'nom' => 'tests',
-            'description' => 'search project test',
+            'description' => 'search task test',
             
         ];
-        $this->projectRepository->create($projectData);
+        $this->taskRepository->create($taskData);
         $searchValue = 'tests';
-        $searchResults = $this->projectRepository->searchData($searchValue);
+        $searchResults = $this->taskRepository->searchData($searchValue);
         $this->assertTrue($searchResults->contains('nom', $searchValue));
     }
 
