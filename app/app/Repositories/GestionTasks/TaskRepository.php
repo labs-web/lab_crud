@@ -4,7 +4,7 @@ namespace App\Repositories\GestionTasks;
 use App\Models\GestionTasks\Task;
 use App\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
-use App\Exceptions\GestionTasks\ProjectAlreadyExistException;
+use App\Exceptions\GestionTasks\TaskAlreadyExistException;
 
 /**
  * Classe TaskRepository qui gère la persistance des tasks dans la base de données.
@@ -43,7 +43,7 @@ class TaskRepository extends BaseRepository
      *
      * @param array $data Données du task à créer.
      * @return mixed
-     * @throws ProjectAlreadyExistException Si le task existe déjà.
+     * @throws TaskAlreadyExistException Si le task existe déjà.
      */
     public function create(array $data)
     {
@@ -52,7 +52,7 @@ class TaskRepository extends BaseRepository
         $existingProject =  $this->model->where('nom', $nom)->exists();
 
         if ($existingProject) {
-            throw ProjectAlreadyExistException::createProject();
+            throw TaskAlreadyExistException::createTask();
         } else {
             return parent::create($data);
         }
