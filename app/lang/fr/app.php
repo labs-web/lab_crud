@@ -2,6 +2,7 @@
 
 return [
     'add' => 'Ajouter',
+    'Project' => 'Projet',
     'rechercher'=>"Rechercher",
     'delete' => 'Supprimer',
     'edit' => 'Modifier',

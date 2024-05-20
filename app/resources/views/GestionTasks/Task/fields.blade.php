@@ -5,6 +5,20 @@
     @endif
     <div class="card-body">
         <div class="form-group">
+            <label for="nom">{{ __('app.Project') }} <span
+                    class="text-danger">*</span></label>
+            <select class="form-control" name="project_id" id="">
+                <option value="default">Choisissez le projet</option> 
+                @foreach ($projets as $projet)
+                <option value="{{$projet->id}}" {{ (isset($dataToEdit) && $dataToEdit->id == $projet->id || old('project_id') == $projet->id) ? 'selected' : '' }}>{{$projet->nom}}</option> 
+                @endforeach
+            </select>
+            @error('nom')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="form-group">
             <label for="nom">{{ __('app.name') }} <span
                     class="text-danger">*</span></label>
             <input name="nom" type="text" class="form-control" id="nom" placeholder="Entrez le titre"

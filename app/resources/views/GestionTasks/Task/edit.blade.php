@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', __('app.edit') . ' ' . __('GestionTasks/task/message.titre'))
+@section('title', __('app.edit') . ' ' . __('GestionTasks/tache.singular'))
 
 @section('content')
     <div class="content-header">

@@ -50,12 +50,13 @@ class TaskRepository extends BaseRepository
         $nom = $data['nom'];
 
         $existingProject =  $this->model->where('nom', $nom)->exists();
-
-        if ($existingProject) {
-            throw TaskAlreadyExistException::createTask();
-        } else {
-            return parent::create($data);
-        }
+        $create = parent::create($data);
+        dd($create);
+        // if ($existingProject) {
+        //     throw TaskAlreadyExistException::createTask();
+        // } else {
+        //     return parent::create($data);
+        // }
     }
 
     /**

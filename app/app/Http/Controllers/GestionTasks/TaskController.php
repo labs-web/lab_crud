@@ -9,6 +9,7 @@ use App\Models\GestionTasks\Task;
 use Illuminate\Http\Request;
 use App\Http\Requests\GestionTasks\taskRequest;
 use App\Repositories\GestionTasks\TaskRepository;
+use App\Repositories\GestionProjets\ProjetRepository;
 use App\Http\Controllers\AppBaseController;
 use Carbon\Carbon;
 use App\Exports\GestionTasks\taskExport;
@@ -17,9 +18,11 @@ use Maatwebsite\Excel\Facades\Excel;
 class TaskController extends AppBaseController
 {
     protected $taskRepository;
-    public function __construct(TaskRepository $taskRepository)
+    protected $ProjetRepository;
+    public function __construct(TaskRepository $taskRepository, ProjetRepository $ProjetRepository)
     {
         $this->taskRepository = $taskRepository;
+        $this->ProjetRepository = $ProjetRepository;
     }
 
     public function index(Request $request)
@@ -41,20 +44,19 @@ class TaskController extends AppBaseController
     public function create()
     {
         $dataToEdit = null;
-        return view('GestionTasks.task.create', compact('dataToEdit'));
+        $projets = $this->ProjetRepository->all()->take(10);
+        return view('GestionTasks.task.create', compact('dataToEdit', 'projets'));
     }
 
 
     public function store(taskRequest $request)
     {
-
         try {
             $validatedData = $request->validated();
             $this->taskRepository->create($validatedData);
             return redirect()->route('tasks.index')->with('success', 'Le task a été ajouté avec succès.');
-
         } catch (\Exception $e) {
-            return abort(500);
+            return $e->getMessage();
         }
     }
 
