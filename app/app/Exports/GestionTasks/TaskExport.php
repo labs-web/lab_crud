@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exports\GestionProjets;
+namespace App\Exports\GestionTasks;
 
 use Maatwebsite\Excel\Concerns\FromArray;
 use Maatwebsite\Excel\Concerns\WithHeadings;
