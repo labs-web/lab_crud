@@ -89,26 +89,4 @@ class TagController extends AppBaseController
         return redirect()->route('tags.index')->with('success', 'Le tag a été supprimer avec succés.');
     }
 
-
-    public function export()
-    {
-        $projects = projet::all();
-
-        return Excel::download(new ProjetExport($projects), 'tag_export.xlsx');
-    }
-
-
-    public function import(Request $request)
-    {
-        $request->validate([
-            'file' => 'required|mimes:xlsx,xls,csv',
-        ]);
-
-        try {
-            Excel::import(new ProjetImport, $request->file('file'));
-        } catch (\InvalidArgumentException $e) {
-            return redirect()->route('tags.index')->withError('Le symbole de séparation est introuvable. Pas assez de données disponibles pour satisfaire au format.');
-        }
-        return redirect()->route('tags.index')->with('success', __('GestionProjets/tag.singular') . ' ' . __('app.addSucées'));
-    }
 }
