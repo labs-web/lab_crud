@@ -1,8 +1,6 @@
 # Installation Laravel
 
-
 ## Installation de PHP
-
 
 PHP 8.2.11 (cli) (construit le 1er octobre 2021 à 15h00) ou une version plus récente est requise.
 
@@ -67,5 +65,11 @@ php artisan serve
 npm run build
 ```
 
-<!-- TODO :Loin and password   -->
 ## Loin and password 
+
+- admin
+  - login :admin@gmail.com
+  - mot de passe: admin
+- membre
+  - login : membre@gmail.com
+  - mot de passe : membre
