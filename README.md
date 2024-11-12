@@ -1,8 +1,13 @@
 # lab_crud
 
-
-- [Rapport](https://labs-web.github.io/lab_crud/documentation/) 
-- [Présentation](https://labs-web.github.io/lab_crud/documentation/presentation.html#/) 
-- Gestion des Projet
-    - [Rapport Gestion des Projet](https://labs-web.github.io/lab_crud/documentation/Gestion-projets/)
-    - [Présentation Gestion des Projet](https://labs-web.github.io/lab_crud/documentation/Gestion-projets/presentation.html#/)
+* **Fonctionnalités existantes:**
+    * Système de sécurité et d'authentification
+    * Gestion complète des projets (CRUD) avec :
+        * Création, lecture, modification, suppression de projets
+        * Association de multiples tags à un projet (relation many-to-many)
+    * Gestion des tags (CRUD)
+    * Maquette fonctionnelle pour la gestion des projets
+* **Tâches à réaliser:**
+    * **Correction de bugs:** Identifier et corriger les anomalies présentes dans le code
+    * **Intégration de la charte graphique:** Adapter l'interface utilisateur aux spécifications visuelles définies
+    * **Complétion de la documentation:** Rédiger un document détaillé décrivant l'architecture, les fonctionnalités et les processus du projet
