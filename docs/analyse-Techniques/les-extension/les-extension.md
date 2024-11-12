@@ -5,7 +5,11 @@ presentationPackage: GestionProjects
 presentation: GestionProjects
 order: 6
 ---
+
 ### Extension de vs code
+
+Dans cette section, nous présenterons les extensions utilisées dans Visual Studio Code (VS Code).
+{:class="introduction"}
 
 ![Prettier](/lab_crud/Analyse-Techniques/les-extension/images/3extensions.png)
   

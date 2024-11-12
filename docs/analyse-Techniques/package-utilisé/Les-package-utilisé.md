@@ -9,9 +9,16 @@ order: 5
 # Analyse Techniques
 {:class="sectionHeader"}
 
+L'analyse technique est essentielle pour identifier les besoins non fonctionnels, qui englobent les contraintes d'intégration, de développement et de performances. Ces éléments, comme les exigences liées à la compatibilité avec d'autres systèmes, aux normes de développement et aux objectifs de performance, sont capturés et documentés en amont afin d'orienter efficacement le processus de conception et de développement de l'application.
+{:class="introduction"}
+
 <!-- new slide -->
 
-## Capturer les besoins techniques
+## Capture des besoins techniques
+
+La capture des besoins techniques implique d'identifier et de documenter les exigences précises relatives à l'infrastructure et aux fonctionnalités d'un système. Cette étape essentielle assure la définition claire des paramètres nécessaires à la conception d'une solution logicielle efficace.
+{:class="introduction"}
+
 
 ### Les package à utiliser
 
@@ -49,7 +56,7 @@ order: 5
 
 <!-- new slide -->
 
-## Gestion des exceptions 
+### Gestion des exceptions 
 
 ![Gestion des exceptions](/lab_crud/Analyse-Techniques/package-utilisé/images/exceptions.jpg){:width="900px"}*figure:Gestion des exceptions*
 
