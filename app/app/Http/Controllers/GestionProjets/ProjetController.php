@@ -12,6 +12,7 @@ use App\Repositories\GestionProjets\ProjetRepository;
 use App\Http\Controllers\AppBaseController;
 use Carbon\Carbon;
 use App\Exports\GestionProjets\projetExport;
+use App\Repositories\GestionProjets\TagRepository;
 use Maatwebsite\Excel\Facades\Excel;
 
 class ProjetController extends AppBaseController
@@ -24,7 +25,7 @@ class ProjetController extends AppBaseController
 
     public function index(Request $request)
     {
-       
+
         if ($request->ajax()) {
             $searchValue = $request->get('searchValue');
             if ($searchValue !== '') {
@@ -34,14 +35,16 @@ class ProjetController extends AppBaseController
             }
         }
         $projectData = $this->projectRepository->paginate();
+
         return view('GestionProjets.projet.index', compact('projectData'));
     }
 
 
-    public function create()
+    public function create(TagRepository $tagRepository)
     {
         $dataToEdit = null;
-        return view('GestionProjets.projet.create', compact('dataToEdit'));
+        $tags = $tagRepository->all();
+        return view('GestionProjets.projet.create', compact('dataToEdit', 'tags'));
     }
 
 
@@ -51,10 +54,9 @@ class ProjetController extends AppBaseController
         try {
             $validatedData = $request->validated();
             $this->projectRepository->create($validatedData);
-            return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.addSucées'));
-
+            return redirect()->route('projets.index')->with('success', __('GestionProjets/projet.singular') . ' ' . __('app.addSucées'));
         } catch (ProjectAlreadyExistException $e) {
-            return back()->withInput()->withErrors(['project_exists' => __('GestionProjets/projet/message.createProjectException')]);
+            return back()->withInput()->withErrors(['project_exists' => __('GestionProjets/projet.singular') . ' ' . __('app.existdeja')]);
         } catch (\Exception $e) {
             return abort(500);
         }
@@ -68,13 +70,14 @@ class ProjetController extends AppBaseController
     }
 
 
-    public function edit(string $id)
+    public function edit(string $id,TagRepository $tagRepository)
     {
         $dataToEdit = $this->projectRepository->find($id);
         $dataToEdit->date_debut = Carbon::parse($dataToEdit->date_debut)->format('Y-m-d');
         $dataToEdit->date_de_fin = Carbon::parse($dataToEdit->date_de_fin)->format('Y-m-d');
+        $tags = $tagRepository->all();
 
-        return view('GestionProjets.projet.edit', compact('dataToEdit'));
+        return view('GestionProjets.projet.edit', compact('dataToEdit','tags'));
     }
 
 
@@ -82,14 +85,14 @@ class ProjetController extends AppBaseController
     {
         $validatedData = $request->validated();
         $this->projectRepository->update($id, $validatedData);
-        return redirect()->route('projets.index', $id)->with('success',__('GestionProjets/projet.singular').' '.__('app.updateSucées'));
+        return redirect()->route('projets.index', $id)->with('success', __('GestionProjets/projet.singular') . ' ' . __('app.updateSucées'));
     }
 
 
     public function destroy(string $id)
     {
         $this->projectRepository->destroy($id);
-        return redirect()->route('projets.index')->with('success', 'Le projet a été supprimer avec succés.');
+        return redirect()->route('projets.index')->with('success', __('GestionProjets/projet.singular') . ' ' . __('app.deleteSucées'));
     }
 
 
@@ -112,6 +115,6 @@ class ProjetController extends AppBaseController
         } catch (\InvalidArgumentException $e) {
             return redirect()->route('projets.index')->withError('Le symbole de séparation est introuvable. Pas assez de données disponibles pour satisfaire au format.');
         }
-        return redirect()->route('projets.index')->with('success',__('GestionProjets/projet.singular').' '.__('app.addSucées'));
+        return redirect()->route('projets.index')->with('success', __('GestionProjets/projet.singular') . ' ' . __('app.addSucées'));
     }
 }

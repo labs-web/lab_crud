@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', __('GestionProjets/projet.singular'))
+@section('title', __('GestionProjets/tag.singular'))
 
 @section('content')
     <div class="content-header">
@@ -17,18 +17,19 @@
                             // Generate the title using the title function
                             use App\helpers\TranslationHelper;
                             $lang = Config::get('app.locale');
-                            $translatedName = TranslationHelper::getTitle(__('GestionProjets/projet.singular'), $lang);
+                            $translatedName = TranslationHelper::getTitle(__('GestionProjets/tag.singular'), $lang);
                             echo $translatedName;
+
                         @endphp
                     </h1>
                 </div>
 
                 <div class="col-sm-6">
                     <div class="float-sm-right">
-                        @can('create-ProjetController')
-                            <a href="{{ route('projets.create') }}" class="btn btn-info">
+                        @can('create-TagController')
+                            <a href="{{ route('tags.create') }}" class="btn btn-info">
                                 <i class="fas fa-plus"></i>
-                                {{ __('app.add') }} {{ __('GestionProjets/projet.singular') }}
+                                {{ __('app.add') }} {{ __('GestionProjets/tag.singular') }}
                             </a>
                         @endcan
                     </div>
@@ -55,7 +56,7 @@
 
                             </div>
                         </div>
-                        @include('GestionProjets.projet.table')
+                        @include('GestionProjets.tag.table')
                     </div>
                 </div>
             </div>

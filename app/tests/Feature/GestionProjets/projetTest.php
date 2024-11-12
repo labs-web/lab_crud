@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use App\Repositories\GestionProjets\ProjetRepository;
 use App\Models\GestionProjets\Projet;
+use App\Models\GestionProjets\Tag;
+
 use Tests\TestCase;
 use App\Exceptions\GestionProjets\ProjectAlreadyExistException;
 
@@ -47,10 +49,25 @@ class projetTest extends TestCase
     public function test_paginate()
     {
         $this->actingAs($this->user);
+        $tags = [];
+        $tags[] = Tag::create([
+            'nom' => 'Tag 1',
+            'description' => 'Description for Tag 1'
+        ]);
+        $tags[] = Tag::create([
+            'nom' => 'Tag 2',
+            'description' => 'Description for Tag 2'
+        ]);
+        
+        $tagIds = [];
+        foreach ($tags as $tag) {
+            $tagIds[] = $tag->id;
+        }
+        
         $projectData = [
-            'nom' => 'project create test',
-            'description' => 'project create test',
-            
+            'nom' => 'project test',
+            'description' => 'project test',
+            'tags' => $tagIds,
         ];
         $project = $this->projectRepository->create($projectData);
         $projects = $this->projectRepository->paginate();
@@ -64,10 +81,25 @@ class projetTest extends TestCase
     public function test_create()
     {
         $this->actingAs($this->user);
+        $tags = [];
+        $tags[] = Tag::create([
+            'nom' => 'Tag 1',
+            'description' => 'Description for Tag 1'
+        ]);
+        $tags[] = Tag::create([
+            'nom' => 'Tag 2',
+            'description' => 'Description for Tag 2'
+        ]);
+        
+        $tagIds = [];
+        foreach ($tags as $tag) {
+            $tagIds[] = $tag->id;
+        }
+        
         $projectData = [
-            'nom' => 'project create test',
-            'description' => 'project create test',
-            
+            'nom' => 'project test',
+            'description' => 'project test',
+            'tags' => $tagIds,
         ];
         $project = $this->projectRepository->create($projectData);
         $this->assertEquals($projectData['nom'], $project->nom);
@@ -80,11 +112,25 @@ class projetTest extends TestCase
     {
         $this->actingAs($this->user);
 
-        $project = Projet::factory()->create();
+        $tags = [];
+        $tags[] = Tag::create([
+            'nom' => 'Tag 1',
+            'description' => 'Description for Tag 1'
+        ]);
+        $tags[] = Tag::create([
+            'nom' => 'Tag 2',
+            'description' => 'Description for Tag 2'
+        ]);
+        
+        $tagIds = [];
+        foreach ($tags as $tag) {
+            $tagIds[] = $tag->id;
+        }
+        
         $projectData = [
-            'nom' => $project->nom,
-            'description' => 'project create test',
-           
+            'nom' => 'project test',
+            'description' => 'project test',
+            'tags' => $tagIds,
         ];
 
         try {
@@ -101,17 +147,46 @@ class projetTest extends TestCase
      * Teste la mise à jour d'un projet.
     */
     public function test_update()
-    {
-        $this->actingAs($this->user);
-        $project = Projet::factory()->create();
-        $projectData = [
-            'nom' => 'project update test',
-            'description' => 'project update test',
-           
-        ];
-        $this->projectRepository->update($project->id, $projectData);
-        $this->assertDatabaseHas('projets', $projectData);
+{
+    $this->actingAs($this->user);
+    $project = Projet::factory()->create();
+    
+    $tags = [];
+    $tags[] = Tag::create([
+        'nom' => 'Tag 1',
+        'description' => 'Description for Tag 1'
+    ]);
+    $tags[] = Tag::create([
+        'nom' => 'Tag 2',
+        'description' => 'Description for Tag 2'
+    ]);
+    
+    $tagIds = [];
+    foreach ($tags as $tag) {
+        $tagIds[] = $tag->id;
     }
+    
+    $projectData = [
+        'nom' => 'project update test',
+        'description' => 'project update test',
+        'tags' => $tagIds,
+    ];
+    
+    $this->projectRepository->update($project->id, $projectData);
+    
+    $this->assertDatabaseHas('projets', [
+        'id' => $project->id,
+        'nom' => 'project update test',
+        'description' => 'project update test',
+    ]);
+    
+    foreach ($tags as $tag) {
+        $this->assertDatabaseHas('projet_tags', [
+            'projet_id' => $project->id,
+            'tag_id' => $tag->id,
+        ]);
+    }
+}
 
     /**
      * Teste la suppression d'un projet.
@@ -119,7 +194,27 @@ class projetTest extends TestCase
     public function test_delete_project()
     {
         $this->actingAs($this->user);
-        $project = Projet::factory()->create();
+        $tags = [];
+        $tags[] = Tag::create([
+            'nom' => 'Tag 1',
+            'description' => 'Description for Tag 1'
+        ]);
+        $tags[] = Tag::create([
+            'nom' => 'Tag 2',
+            'description' => 'Description for Tag 2'
+        ]);
+        
+        $tagIds = [];
+        foreach ($tags as $tag) {
+            $tagIds[] = $tag->id;
+        }
+        
+        $projectData = [
+            'nom' => 'project test',
+            'description' => 'project test',
+            'tags' => $tagIds,
+        ];
+        $project = $this->projectRepository->create($projectData);
         $this->projectRepository->destroy($project->id);
         $this->assertDatabaseMissing('projets', ['id' => $project->id]);
     }
@@ -130,12 +225,27 @@ class projetTest extends TestCase
     public function test_project_search()
     {
         $this->actingAs($this->user);
+        $tags = [];
+        $tags[] = Tag::create([
+            'nom' => 'Tag 1',
+            'description' => 'Description for Tag 1'
+        ]);
+        $tags[] = Tag::create([
+            'nom' => 'Tag 2',
+            'description' => 'Description for Tag 2'
+        ]);
+        
+        $tagIds = [];
+        foreach ($tags as $tag) {
+            $tagIds[] = $tag->id;
+        }
+        
         $projectData = [
-            'nom' => 'tests',
-            'description' => 'search project test',
-            
+            'nom' => 'project test',
+            'description' => 'project test',
+            'tags' => $tagIds,
         ];
-        $this->projectRepository->create($projectData);
+        $project = $this->projectRepository->create($projectData);
         $searchValue = 'tests';
         $searchResults = $this->projectRepository->searchData($searchValue);
         $this->assertTrue($searchResults->contains('nom', $searchValue));
