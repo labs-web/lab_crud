@@ -50,12 +50,14 @@ Une séance d’empathie a été réalisée avec Abdelatif Soklabi, un formateur
 
 ## Définir le problème
 
+Passer un temps considérable à consulter et naviguer entre les différents projets en raison de la lenteur du téléchargement des données, causée par un volume important de données.
+{:class="introduction"}
+
 ![Définir le problem](/lab_crud/besoin/images/problem.jpg){:width="700px"}
 *figure: définir le problème*
 
 <!-- note -->
 
-Passer un temps considérable à consulter et naviguer entre les différents projets en raison de la lenteur du téléchargement des données, causée par un volume important de données.
 
 <!-- new slide -->
 
